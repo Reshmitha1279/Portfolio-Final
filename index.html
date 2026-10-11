@@ -1,0 +1,1458 @@
+<title>Reshmitha Paricha Portfolio</title>
+<meta name="description" content="Portfolio of Reshmitha Paricha, a Business Analytics graduate in Hyderabad. Projects in data, content, e-commerce and research.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reshmitha Paricha Portfolio">
+<meta property="og:description" content="Digital marketing, business analytics and AI. Content, research, dashboards and a Shopify storefront.">
+<link rel="canonical" href="https://reshmitha1279.github.io/Portfolio/">
+<meta property="og:url" content="https://reshmitha1279.github.io/Portfolio/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Reshmitha Paricha","description":"Business Analytics graduate from Hyderabad","alumniOf":"Raja Bahadur Venkata Rama Reddy College","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressCountry":"IN"},"email":"reshmitha1279@gmail.com","sameAs":["https://linkedin.com/in/reshmithaparicha"],"knowsAbout":["SEO","Content strategy","Competitor analysis","Power BI","Excel","SQL","Shopify"]}</script>
+<style>
+/* Concept: a charcoal studio notebook. Lime is the one loud colour, indigo is a quiet second voice. Layout reads like a dashboard that opens into case studies. */
+:root{
+  color-scheme:dark;
+  --bg:#121311; --surface:#1A1B18; --surface-2:#23241F; --line:#33342D;
+  --ink:#F3F0E9; --muted:#A9AA9E;
+  --accent:#D6F25C; --accent-ink:#13140D; --accent-text:#D6F25C;
+  --indigo:#9188F2; --amber:#F0B65A; --danger:#FF8F80; --ok:#8FE3A8;
+  --f-display:"Syne","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r-sm:8px; --r-md:14px; --r-lg:22px;
+  --gutter:clamp(16px,4vw,32px);
+  --ease:cubic-bezier(.2,.7,.2,1); --t:.22s;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    color-scheme:light;
+    --bg:#F4F3EC; --surface:#FFFFFF; --surface-2:#ECEBE2; --line:#D8D7CB;
+    --ink:#16170F; --muted:#5A5B50;
+    --accent:#CBEB45; --accent-ink:#13140D; --accent-text:#465600;
+    --indigo:#4B3FCB; --amber:#975700; --danger:#B3261E; --ok:#1F7A3A;
+  }
+}
+:root[data-theme="light"]{
+  color-scheme:light;
+  --bg:#F4F3EC; --surface:#FFFFFF; --surface-2:#ECEBE2; --line:#D8D7CB;
+  --ink:#16170F; --muted:#5A5B50;
+  --accent:#CBEB45; --accent-ink:#13140D; --accent-text:#465600;
+  --indigo:#4B3FCB; --amber:#975700; --danger:#B3261E; --ok:#1F7A3A;
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121311; --surface:#1A1B18; --surface-2:#23241F; --line:#33342D;
+  --ink:#F3F0E9; --muted:#A9AA9E;
+  --accent:#D6F25C; --accent-ink:#13140D; --accent-text:#D6F25C;
+  --indigo:#9188F2; --amber:#F0B65A; --danger:#FF8F80; --ok:#8FE3A8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--f-body);padding-inline:var(--gutter);padding-block:0;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+h1,h2,h3{font-family:var(--f-display);margin:0;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0}
+a{color:var(--accent-text)}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent-text);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1160px;margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--accent-ink);padding:10px 14px;border-radius:8px;z-index:100;font-weight:600}
+.skip:focus{left:8px}
+.mono{font-family:var(--f-mono)}
+.eyebrow{font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-text);margin-bottom:14px}
+.sec{padding-block:clamp(64px,10vw,112px)}
+.sec h2{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.05;font-weight:800;margin-bottom:14px}
+.lede{color:var(--muted);max-width:62ch;font-size:1.05rem}
+.sec-head{margin-bottom:36px}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);background:var(--bg);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.brand{font:800 1.05rem var(--f-display);color:var(--ink);text-decoration:none;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.brand i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font:700 12px var(--f-mono);font-style:normal}
+.nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.nav a{display:block;padding:9px 12px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;border-radius:999px;position:relative;transition:color var(--t)}
+.nav a:hover{color:var(--ink)}
+.nav a[aria-current="true"]{color:var(--ink)}
+.nav a[aria-current="true"]::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:2px;border-radius:2px;background:var(--accent)}
+.hdr-tools{display:flex;gap:8px;align-items:center}
+.icon-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;cursor:pointer;transition:border-color var(--t),background var(--t)}
+.icon-btn:hover{border-color:var(--muted)}
+.icon-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8}
+.menu-btn{display:none}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:transparent;pointer-events:none}
+.progress i{display:block;height:100%;background:var(--accent);transform:scaleX(0);transform-origin:left}
+@media (max-width:900px){
+  .menu-btn{display:grid}
+  .nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);padding:8px var(--gutter) 16px;display:none}
+  .nav.open{display:block}
+  .nav ul{flex-direction:column}
+  .nav a{padding:12px 8px;border-radius:8px}
+  .nav a[aria-current="true"]::after{left:8px;right:auto;width:24px}
+}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:999px;padding:14px 22px;font:600 15px/1 var(--f-body);text-decoration:none;cursor:pointer;transition:transform var(--t) var(--ease),background var(--t),border-color var(--t),color var(--t);will-change:transform}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover,.btn-primary.is-hover{background:var(--ink);color:var(--bg)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover,.btn-ghost.is-hover{border-color:var(--ink)}
+.btn-text{color:var(--accent-text);padding-inline:6px;background:none}
+.btn-text:hover{text-decoration:underline;text-underline-offset:4px}
+.btn:active{transform:scale(.98)}
+.btn:disabled,.btn.is-disabled{opacity:.45;cursor:not-allowed}
+.btn.is-focus{outline:2px solid var(--accent-text);outline-offset:3px}
+.chip{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:9px 15px;font:500 14px/1 var(--f-body);cursor:pointer;transition:all var(--t)}
+.chip:hover{color:var(--ink);border-color:var(--muted)}
+.chip[aria-pressed="true"],.chip[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px}
+.tag{display:inline-block;font:500 11px/1 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:6px 8px}
+
+/* hero */
+.hero{padding-block:clamp(36px,7vw,80px) clamp(40px,6vw,72px);display:grid;gap:36px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:940px){.hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center}}
+.avail{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:8px 14px 8px 12px;font:500 13px/1 var(--f-body);color:var(--muted);margin-bottom:22px;background:var(--surface)}
+.avail .dot{width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 2.4s infinite}
+.avail.off .dot{background:var(--muted);animation:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 55%,transparent)}70%,100%{box-shadow:0 0 0 9px transparent}}
+.hero h1{font-size:clamp(2.5rem,7.4vw,5.4rem);line-height:.95;font-weight:800;letter-spacing:-.035em;text-transform:uppercase}
+.kicker{font:500 clamp(.8rem,2vw,.95rem)/1.4 var(--f-mono);letter-spacing:.08em;color:var(--accent-text);margin:16px 0 22px}
+.headline{font:700 clamp(1.35rem,3.4vw,2.1rem)/1.18 var(--f-display);letter-spacing:-.02em;max-width:22ch}
+.headline .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.headline .w span{display:inline-block;animation:rise .8s var(--ease) both;animation-delay:calc(var(--i) * 70ms + 120ms)}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.hero .sub{color:var(--muted);max-width:56ch;margin:20px 0 28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
+.brief{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden}
+.brief div{background:var(--surface);padding:14px 16px}
+.brief dt{font:500 11px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.brief dd{margin:0;font-size:14px}
+.net-wrap{position:relative;width:100%;max-width:540px;margin-inline:auto}
+.net{width:100%;aspect-ratio:1;display:block;border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--line);cursor:default;touch-action:pan-y}
+.net-legend{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font:400 12px/1.4 var(--f-mono);color:var(--muted);margin-top:12px}
+.net-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+
+/* about */
+.about-grid{display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.about-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px}}
+.journey{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.journey a{font:500 13px/1 var(--f-mono);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:10px 14px;color:var(--ink);background:var(--surface);transition:border-color var(--t)}
+.journey a:hover{border-color:var(--accent-text)}
+.journey .next{border-style:dashed;color:var(--accent-text)}
+.interest{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);margin-bottom:12px;overflow:hidden}
+.interest>button{width:100%;text-align:left;background:none;border:0;padding:20px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.interest h3{font-size:1.25rem}
+.interest .sum{display:block;color:var(--muted);font-size:14px;margin-top:4px;font-family:var(--f-body);font-weight:400;letter-spacing:0}
+.interest .plus{flex:none;font:500 1.3rem/1 var(--f-mono);color:var(--accent-text);transition:transform var(--t)}
+.interest.open .plus{transform:rotate(45deg)}
+.interest .body{padding:0 22px 20px}
+.interest ul{margin:8px 0 12px;padding-left:18px;color:var(--ink)}
+.interest li{margin:6px 0}
+.interest .note{font:400 13px/1.5 var(--f-mono);color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
+.links-row{display:flex;flex-wrap:wrap;gap:8px}
+
+/* skills */
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;font:400 13px/1.4 var(--f-mono);color:var(--muted);margin:20px 0 16px}
+.skills-layout{display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:940px){.skills-layout{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:start}}
+.skill-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.skill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);border-radius:var(--r-sm);padding:11px 14px;cursor:pointer;font-size:14px;font-weight:500;transition:border-color var(--t),background var(--t)}
+.skill:hover{border-color:var(--muted)}
+.skill[aria-pressed="true"]{border-color:var(--accent-text);background:var(--surface-2)}
+.skill .mk{font-size:13px;color:var(--accent-text)}
+.skill[data-st="known"] .mk{color:var(--indigo)}
+.skill[data-st="learning"] .mk{color:var(--amber)}
+.detail{position:sticky;top:84px}
+.detail h3{font-size:1.5rem;margin:6px 0 10px}
+.detail .st{display:inline-flex;gap:8px;align-items:center;font:500 12px/1 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:7px 11px}
+.detail p{color:var(--muted);margin-bottom:16px}
+.detail .seen{font:500 11px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+
+/* projects */
+.filters{margin-bottom:26px}
+.proj-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr))}
+.proj{display:flex;flex-direction:column;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;transition:border-color var(--t),transform var(--t) var(--ease)}
+.proj:hover{border-color:var(--accent-text);transform:translateY(-3px)}
+.proj h3{font-size:1.35rem;line-height:1.15}
+.proj p{color:var(--muted);font-size:15px}
+.proj .meta{display:flex;flex-wrap:wrap;gap:6px}
+.proj .go{margin-top:auto;align-self:flex-start}
+.proj[hidden]{display:none}
+.proj .ph{aspect-ratio:16/9;border-radius:var(--r-sm);background:var(--surface-2);overflow:hidden;display:grid;place-items:center}
+.proj .ph img{width:100%;height:100%;object-fit:cover;object-position:top}
+.proj .ph span{font:500 12px var(--f-mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase;padding:10px;text-align:center}
+.empty-note{color:var(--muted);padding:24px 0}
+
+/* dialog */
+dialog{color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:0;width:min(100% - 24px,880px);max-height:92vh}
+dialog::backdrop{background:rgba(8,9,7,.72)}
+.dlg-in{padding:clamp(20px,4vw,40px)}
+.dlg-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:22px}
+.dlg-top h2{font-size:clamp(1.5rem,4vw,2.3rem);line-height:1.08}
+.cs{display:grid;gap:22px}
+.cs section{display:grid;gap:8px;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line);padding-top:18px}
+@media (min-width:700px){.cs section{grid-template-columns:150px minmax(0,1fr);gap:24px}}
+.cs h3{font:500 12px/1.4 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);padding-top:3px}
+.cs ul{margin:0;padding-left:18px}
+.cs li{margin:5px 0}
+.cs .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.cs .shots img{border-radius:var(--r-sm);border:1px solid var(--line);width:100%}
+.cs .slot{border:1px dashed var(--line);border-radius:var(--r-sm);padding:16px;color:var(--muted);font-size:14px}
+.cs .small{font:400 13px/1.5 var(--f-mono);color:var(--muted)}
+
+/* upgrades: image-led project cards, keyboard skill map, phone skill detail */
+.proj .ph.shot{aspect-ratio:16/10;background:#101010;border:1px solid var(--line)}
+.proj .ph.shot img{object-fit:contain;object-position:center}
+.mapkeys{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
+.mapkeys span{flex-basis:100%;text-align:center;font:400 12px/1.4 var(--f-mono);color:var(--muted)}
+.mapkeys button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 11px;font:500 12px/1 var(--f-mono);cursor:pointer;transition:border-color var(--t)}
+.mapkeys button:hover{border-color:var(--accent-text)}
+@media (max-width:939px){.detail{position:static;order:-1}}
+.cs figure{margin:0;display:grid;gap:8px}
+.cs figcaption{font:400 13px/1.5 var(--f-mono);color:var(--muted)}
+
+/* lab */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.lab{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(18px,3vw,32px)}
+.lab h3{font-size:1.5rem;margin-bottom:6px}
+.badge{display:inline-flex;align-items:center;gap:8px;font:500 12px/1 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--amber);border:1px solid var(--amber);border-radius:6px;padding:7px 9px;margin:8px 0 18px}
+.two{display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.two{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
+label{display:block;font:500 13px/1.3 var(--f-mono);letter-spacing:.04em;color:var(--muted);margin:14px 0 6px}
+input[type=text],input[type=email],input[type=number],textarea,select{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;font:400 15px/1.4 var(--f-body);transition:border-color var(--t)}
+textarea{min-height:110px;resize:vertical}
+input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--accent-text);outline-offset:1px;border-color:var(--accent-text)}
+input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:var(--danger)}
+input[type=range]{width:100%;accent-color:var(--accent-text)}
+.counter{font:400 12px/1 var(--f-mono);color:var(--muted);display:flex;justify-content:space-between;margin-top:6px}
+.meter{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:6px}
+.meter i{display:block;height:100%;width:0;background:var(--accent-text);transition:width var(--t)}
+.meter.warn i{background:var(--amber)}
+.serp{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-md);padding:16px 18px;margin-bottom:16px}
+.serp .u{font:400 12px/1.3 var(--f-mono);color:var(--muted)}
+.serp .t{font:600 1.15rem/1.3 var(--f-display);color:var(--indigo);margin:4px 0}
+.serp .d{font-size:14px;color:var(--muted)}
+.serp b{color:var(--ink);background:color-mix(in srgb,var(--accent) 28%,transparent);font-weight:600}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.checks li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;font-size:14px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg)}
+.checks .ic{font:600 14px/1.5 var(--f-mono);text-align:center}
+.checks .pass .ic{color:var(--ok)}
+.checks .warn .ic{color:var(--amber)}
+.checks .fail .ic{color:var(--danger)}
+.checks .info .ic{color:var(--indigo)}
+.checks b{display:block;font-weight:600}
+.checks span.d{color:var(--muted)}
+.sumline{font:500 13px/1.4 var(--f-mono);color:var(--muted);margin-bottom:10px}
+.presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.field-row{display:grid;grid-template-columns:minmax(0,1fr) 120px;gap:12px;align-items:center}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:10px;margin-bottom:18px}
+.tile{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-md);padding:14px}
+.tile dt{font:500 11px/1.2 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.tile dd{margin:0;font:700 1.4rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.tile small{display:block;font:400 11px/1.3 var(--f-mono);color:var(--muted);margin-top:8px}
+.funnel{display:grid;gap:8px;margin-bottom:16px}
+.funnel div{display:grid;grid-template-columns:96px minmax(0,1fr) 84px;gap:10px;align-items:center;font:400 12px/1 var(--f-mono);color:var(--muted)}
+.funnel .bar{height:14px;background:var(--line);border-radius:4px;overflow:hidden}
+.funnel .bar i{display:block;height:100%;background:var(--accent-text);border-radius:4px;transition:width var(--t)}
+.funnel em{font-style:normal;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.whatif{border-left:3px solid var(--accent-text);padding:2px 0 2px 14px;color:var(--muted);font-size:14px}
+.whatif p{margin:6px 0}
+.warnmsg{color:var(--amber);font:400 13px/1.4 var(--f-mono);margin-top:10px;min-height:1.4em}
+.chart-wrap{position:relative}
+.chart-wrap svg{width:100%;height:auto;display:block;overflow:visible}
+.chart-wrap text{fill:var(--muted);font:400 11px var(--f-mono)}
+.chart-wrap .grid line{stroke:var(--line)}
+.bar-rect{fill:var(--accent-text);transition:opacity var(--t)}
+.bar-rect:hover,.bar-rect:focus{opacity:.7;outline:none}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font:500 12px/1.3 var(--f-mono);padding:7px 10px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-100%);opacity:0;transition:opacity .12s;z-index:5}
+.tip.on{opacity:1}
+.regions{display:grid;gap:8px;margin:16px 0}
+.regions div{display:grid;grid-template-columns:64px minmax(0,1fr) 92px;gap:10px;align-items:center;font:400 13px/1 var(--f-mono)}
+.regions .bar{height:12px;background:var(--line);border-radius:4px;overflow:hidden}
+.regions .bar i{display:block;height:100%;background:var(--muted);transition:width var(--t)}
+.regions .top .bar i{background:var(--accent-text)}
+.regions em{font-style:normal;text-align:right;font-variant-numeric:tabular-nums}
+.insights{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15px}
+.insights li{padding-left:18px;position:relative}
+.insights li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--accent-text)}
+.ctl{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:18px;align-items:flex-end}
+.ctl>div{min-width:160px}
+
+/* timeline */
+.tl{list-style:none;margin:0;padding:0 0 0 28px;position:relative}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl::after{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--accent-text);transform:scaleY(var(--p,0));transform-origin:top}
+.tl li{position:relative;margin-bottom:12px}
+.tl li::before{content:"";position:absolute;left:-28px;top:22px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--accent-text);z-index:2}
+.tl details{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md)}
+.tl summary{list-style:none;cursor:pointer;display:grid;gap:4px 16px;grid-template-columns:minmax(0,1fr) auto;padding:18px 20px;align-items:center}
+.tl summary::-webkit-details-marker{display:none}
+.tl summary h3{font-size:1.1rem;line-height:1.25}
+.tl summary .when{font:500 12px/1.3 var(--f-mono);color:var(--muted);grid-column:1/-1}
+.tl summary::after{content:"+";grid-row:1;grid-column:2;font:500 1.3rem/1 var(--f-mono);color:var(--accent-text)}
+.tl details[open] summary::after{content:"\2212"}
+.tl .inner{padding:0 20px 20px;display:grid;gap:12px}
+.tl .inner h4{font:500 11px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.tl .inner ul{margin:0;padding-left:18px}
+.tl .inner li{margin:4px 0}
+.tl .inner li::before{display:none}
+.tl-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+
+/* certs */
+.shelf{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));margin-top:20px}
+.cert{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:18px;display:flex;flex-direction:column;gap:10px;border-top:4px solid var(--accent-text)}
+.cert[data-topic="ads"]{border-top-color:var(--indigo)}
+.cert[data-topic="mkt"]{border-top-color:var(--amber)}
+.cert[data-topic="data"]{border-top-color:var(--ok)}
+.cert[hidden]{display:none}
+.cert h3{font-size:1.05rem;line-height:1.25}
+.cert .prov{font:500 12px/1.3 var(--f-mono);color:var(--muted)}
+.cert .status{font:500 12px/1 var(--f-mono);color:var(--ok)}
+.cert button.more{margin-top:auto;align-self:flex-start;background:none;border:0;color:var(--accent-text);font:500 13px/1 var(--f-body);cursor:pointer;padding:6px 0}
+.cert .use{font-size:14px;color:var(--muted)}
+.cert .use[hidden]{display:none}
+
+/* resume + contact */
+.resume-grid{display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.resume-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}}
+.paper h3{font-size:1.2rem;margin:18px 0 6px}
+.paper h3:first-child{margin-top:0}
+.paper ul{margin:6px 0;padding-left:18px;color:var(--muted)}
+.paper p{color:var(--muted)}
+.stack{display:grid;gap:10px;align-content:start}
+.contact-grid{display:grid;gap:36px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.contact-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px}}
+.contact h2{font-size:clamp(2rem,5.6vw,3.8rem)}
+.copy-line{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid var(--line)}
+.copy-line span{overflow-wrap:anywhere}
+.copy-line button{border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 12px/1 var(--f-mono);border-radius:6px;padding:7px 9px;cursor:pointer}
+.err{color:var(--danger);font:400 13px/1.4 var(--f-mono);min-height:1.2em;margin-top:6px}
+.form-note{font:400 13px/1.5 var(--f-mono);color:var(--muted);margin-top:14px}
+.ok-box{border:1px solid var(--ok);border-radius:var(--r-md);padding:18px;margin-top:16px}
+.ok-box[hidden]{display:none}
+.ok-box h3{font-size:1.1rem;margin-bottom:6px}
+
+/* colophon + footer */
+.colo summary{cursor:pointer;font:500 14px/1 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text);padding:12px 0}
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:16px 0}
+.sw{border:1px solid var(--line);border-radius:var(--r-sm);overflow:hidden;font:400 12px/1.4 var(--f-mono)}
+.sw i{display:block;height:44px}
+.sw span{display:block;padding:8px 10px;color:var(--muted)}
+.specimen{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.colo ul{padding-left:18px;color:var(--muted)}
+.colo li{margin:6px 0}
+.foot{border-top:1px solid var(--line);margin-inline:calc(var(--gutter) * -1);padding:28px var(--gutter) 40px;color:var(--muted);font-size:14px}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Reshmitha Paricha, home"><i aria-hidden="true">RP</i>Reshmitha Paricha</a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#about" data-nav="about">About</a></li>
+        <li><a href="#skills" data-nav="skills">Skills</a></li>
+        <li><a href="#projects" data-nav="projects">Projects</a></li>
+        <li><a href="#lab" data-nav="lab">Lab</a></li>
+        <li><a href="#experience" data-nav="experience">Experience</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-tools">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></svg></button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+</header>
+
+<main id="main">
+
+<section id="home" data-nav="home" class="hero" aria-labelledby="h1">
+  <div>
+    <p class="avail" id="avail"><span class="dot" aria-hidden="true"></span><span id="availText">Open to new opportunities</span></p>
+    <h1 id="h1">Reshmitha Paricha</h1>
+    <p class="kicker">Digital Marketing × Business Analytics × AI</p>
+    <p class="headline" id="headline" aria-label="Turning Data, Search and Ideas Into Digital Growth.">Turning Data, Search &amp; Ideas Into Digital Growth.</p>
+    <p class="sub">I explore how search, content, analytics, and AI can help businesses understand their audiences and make smarter marketing decisions.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary magnetic" href="#projects">Explore My Work</a>
+      <a class="btn btn-ghost magnetic" href="Reshmitha_Paricha_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      <a class="btn btn-text" href="#contact">Let's Connect</a>
+    </div>
+    <dl class="brief" aria-label="Quick facts">
+            <div><dt>Education</dt><dd>BBA Business Analytics, 9.3 CGPA, May 2026</dd></div>
+      <div><dt>Experience</dt><dd>Content &amp; Marketing Intern, Kairos Technology, Dec 2025 to Feb 2026</dd></div>
+      <div><dt>Toolkit</dt><dd>Excel, SQL, Python, Power BI, Tableau, Shopify, SEO</dd></div>
+    </dl>
+  </div>
+  <div class="net-wrap">
+    <canvas class="net" id="net" role="img" aria-label="Interactive map of my skills. Click a skill to read more about it."></canvas>
+    <div class="net-legend" aria-hidden="true">
+      <span><i style="background:var(--accent)"></i>Marketing</span>
+      <span><i style="background:var(--indigo)"></i>Analytics</span>
+      <span><i style="background:var(--ink)"></i>E-commerce and research</span>
+      <span>Move the cursor. Click a node.</span>
+    </div>
+    <div class="mapkeys" id="mapKeys" role="group" aria-label="Skill map, keyboard version"><span>Or pick a skill</span></div>
+  </div>
+</section>
+
+<section id="about" data-nav="about" class="sec" aria-labelledby="aboutH">
+  <div class="about-grid">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2 id="aboutH">A business analytics graduate who writes, builds and researches.</h2>
+      <p class="lede">I finished my BBA in Business Analytics in 2026 with a 9.3 CGPA, focused on data analysis and visualization, business intelligence, marketing analytics and statistical thinking. Alongside it I analyzed telecom churn data, wrote SEO content, researched competitors and built a Shopify store and a Power BI dashboard.</p>
+      <p class="lede" style="margin-top:14px">Exploring narratives through words, and checking them against data.</p>
+      <div class="journey" aria-label="Journey shortcuts">
+        <a href="#experience">BBA starts 2023</a>
+        <a href="#experience">Projects in 2025</a>
+        <a href="#experience">Kairos internship</a>
+              </div>
+    </div>
+    <div id="interests">
+      <div class="interest" data-i="0">
+        <button type="button" aria-expanded="false"><span><h3>Digital Marketing<span class="sum">SEO, content optimization, social media, competitor research and campaign strategy.</span></h3></span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="body" hidden>
+          <ul>
+            <li>Created and optimized technology blog and social content with SEO strategies at Kairos Technology.</li>
+            <li>Wrote blog content for a playschool brand using basic SEO and keyword strategy.</li>
+            <li>Researched competitors and the market to find positioning opportunities.</li>
+          </ul>
+                    <div class="links-row" style="margin-top:12px"><button class="btn btn-ghost" type="button" data-open="kairos">Kairos case study</button><button class="btn btn-ghost" type="button" data-open="seoblog">SEO blog project</button></div>
+        </div>
+      </div>
+      <div class="interest" data-i="1">
+        <button type="button" aria-expanded="false"><span><h3>Business Analytics<span class="sum">Excel, Power BI, Tableau, SQL, data visualization and analytical problem-solving.</span></h3></span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="body" hidden>
+          <ul>
+            <li>Led the analysis of telecom customer data at iAppSys to find the drivers of churn and high-risk customer groups.</li>
+            <li>Built an interactive Power BI dashboard of regional sales performance and trends.</li>
+            <li>Analyzed sales data to look for growth patterns.</li>
+            <li>Degree focus on data analysis, visualization and business intelligence.</li>
+          </ul>
+                    <div class="links-row" style="margin-top:12px"><button class="btn btn-ghost" type="button" data-open="churn">Churn analysis</button><button class="btn btn-ghost" type="button" data-open="dashboard">Sales dashboard</button><a class="btn btn-ghost" href="#lab">Try the Lab</a></div>
+        </div>
+      </div>
+      <div class="interest" data-i="2">
+        <button type="button" aria-expanded="false"><span><h3>AI &amp; Emerging Technology<span class="sum">Interest in AI-driven marketing, automation and technology-focused content.</span></h3></span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="body" hidden>
+          <ul>
+            <li>My internship exposed me to agentic AI solution development, including architecture and implementation concepts.</li>
+            <li>Used AI-powered tools to speed up content creation on the Shopify project.</li>
+          </ul>
+                    <div class="links-row" style="margin-top:12px"><button class="btn btn-ghost" type="button" data-open="kairos">Technology content and AI research</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" data-nav="skills" class="sec" aria-labelledby="skillsH">
+  <div class="sec-head">
+    <p class="eyebrow">Skills</p>
+    <h2 id="skillsH">What I work with.</h2>
+    <p class="lede">Pick a category, then a skill, to see where I have used it.</p>
+  </div>
+  <div class="chips" id="skillCats" role="group" aria-label="Skill categories"></div>
+    <div class="skills-layout">
+    <div class="skill-grid" id="skillGrid"></div>
+    <aside class="card detail" id="skillDetail" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section id="projects" data-nav="projects" class="sec" aria-labelledby="projH">
+  <div class="sec-head">
+    <p class="eyebrow">Projects</p>
+    <h2 id="projH">Case studies, with what I did and what I learned.</h2>
+    <p class="lede">Every card opens a case study with the context, my role, the process and what I took from it.</p>
+  </div>
+  <div class="chips filters" id="projFilters" role="group" aria-label="Filter projects">
+    <button class="chip" type="button" data-f="all" aria-pressed="true">All Projects</button>
+    <button class="chip" type="button" data-f="seo" aria-pressed="false">SEO &amp; Content</button>
+    <button class="chip" type="button" data-f="marketing" aria-pressed="false">Marketing</button>
+    <button class="chip" type="button" data-f="analytics" aria-pressed="false">Analytics</button>
+    <button class="chip" type="button" data-f="ecommerce" aria-pressed="false">E-commerce</button>
+    <button class="chip" type="button" data-f="ai" aria-pressed="false">AI &amp; Technology</button>
+  </div>
+  <div class="proj-grid" id="projGrid">
+    <article class="proj" data-cats="analytics" data-id="churn">
+      <div class="ph shot"><img src="assets/churn-dashboard.png" alt="Power BI dashboard with eight charts on customer churn: internet service mix, churn split, churn by internet service, churn by contract, tenure, monthly charges and contract counts" loading="lazy" width="798" height="511"></div>
+      <div class="meta"><span class="tag">Analytics</span><span class="tag">Power BI</span><span class="tag">iAppSys internship</span></div>
+      <h3>Telecom Customer Churn Analysis</h3>
+      <p>Led the analysis of telecom customer data at iAppSys to find what drives churn. A Power BI dashboard compares who leaves, by internet service, contract and tenure.</p>
+      <button class="btn btn-ghost go" type="button" data-open="churn">Open case study</button>
+    </article>
+    <article class="proj" data-cats="analytics" data-id="dashboard">
+      <div class="meta"><span class="tag">Analytics</span><span class="tag">Power BI</span><span class="tag">2025</span></div>
+      <h3>Sales Performance Dashboard</h3>
+      <p>An interactive Power BI dashboard of KPIs and regional sales trends, built to turn sales data into clear performance insights.</p>
+      <button class="btn btn-ghost go" type="button" data-open="dashboard">Open case study</button>
+    </article>
+    <article class="proj" data-cats="ecommerce marketing" data-id="shop">
+      <div class="ph"><img src="assets/sendriya-home.jpg" alt="Sendriya Life storefront home page with the headline From the mountain. Into your daily ritual. and a jar of Himalayan Shilajit resin" loading="lazy" width="1100" height="525"></div>
+      <div class="meta"><span class="tag">E-commerce</span><span class="tag">Shopify</span><span class="tag">Excel</span><span class="tag">2025</span></div>
+      <h3>E-commerce Brand Development</h3>
+      <p>The Sendriya Life storefront on Shopify, with homepage copy, product descriptions, FAQs and a navigation structure built around the customer's path.</p>
+      <button class="btn btn-ghost go" type="button" data-open="shop">Open case study</button>
+    </article>
+    <article class="proj" data-cats="seo marketing" data-id="seoblog">
+      <div class="meta"><span class="tag">SEO &amp; Content</span><span class="tag">Blogging</span></div>
+      <h3>SEO Blog Content for a Playschool Brand</h3>
+      <p>Blog posts for parents, written with basic SEO and keyword strategy and structured for easy reading.</p>
+      <button class="btn btn-ghost go" type="button" data-open="seoblog">Open case study</button>
+    </article>
+    <article class="proj" data-cats="seo ai marketing" data-id="kairos">
+      <div class="meta"><span class="tag">SEO &amp; Content</span><span class="tag">AI &amp; Technology</span><span class="tag">12/2025 to 02/2026</span></div>
+      <h3>Technology Content &amp; AI Research at Kairos</h3>
+      <p>SEO-focused technology content, competitor and market research, and a look at how agentic AI solutions are built.</p>
+      <button class="btn btn-ghost go" type="button" data-open="kairos">Open case study</button>
+    </article>
+    <article class="proj" data-cats="marketing" data-id="zestro">
+      <div class="ph"><img src="assets/zestora.jpg" alt="Zestora teaser poster with a bowl of gulab jamun and ice cream, the line Prepare for a surprise and the words Food and Fun" loading="lazy" width="480" height="684"></div>
+      <div class="meta"><span class="tag">Marketing</span><span class="tag">Poster design</span></div>
+      <h3>Zestro Stall Promotional Posters</h3>
+      <p>Two posters for a food stall: a curiosity teaser and a scan-to-explore menu poster with a clear three-step call to action.</p>
+      <button class="btn btn-ghost go" type="button" data-open="zestro">Open case study</button>
+    </article>
+    <article class="proj" data-cats="marketing" data-id="toolkit">
+      <div class="meta"><span class="tag">Marketing</span><span class="tag">Research</span><span class="tag">2025</span></div>
+      <h3>Career Toolkit for Students</h3>
+      <p>Research and structured guides that help students choose a career path, built with T.I.M.E Akola and WE Hub.</p>
+      <button class="btn btn-ghost go" type="button" data-open="toolkit">Open case study</button>
+    </article>
+  </div>
+  <p class="empty-note" id="projEmpty" hidden>No projects in this filter yet.</p>
+</section>
+
+<dialog id="caseDlg" aria-labelledby="caseTitle">
+  <div class="dlg-in">
+    <div class="dlg-top">
+      <h2 id="caseTitle"></h2>
+      <button class="icon-btn" id="caseClose" type="button" aria-label="Close case study"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="cs" id="caseBody"></div>
+  </div>
+</dialog>
+
+<section id="lab" data-nav="lab" class="sec" aria-labelledby="labH">
+  <div class="sec-head">
+    <p class="eyebrow">The Marketing Lab</p>
+    <h2 id="labH">Three small tools that show how I think.</h2>
+    <p class="lede">They are free to use and they actually calculate. The examples are pre-filled so you can see them work, then change anything.</p>
+  </div>
+  <div class="tabs" role="tablist" aria-label="Lab tools">
+    <button class="chip" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true" type="button">SEO Audit Simulator</button>
+    <button class="chip" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" tabindex="-1" type="button">Campaign Metrics Explorer</button>
+    <button class="chip" role="tab" id="tab-c" aria-controls="panel-c" aria-selected="false" tabindex="-1" type="button">Analytics Insight Explorer</button>
+  </div>
+
+  <div class="lab" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
+    <h3>SEO Audit Simulator</h3>
+    <p class="badge">Simplified educational checker. Not a crawler or a full technical SEO audit.</p>
+    <div class="two">
+      <div>
+        <label for="seoTitle">Page title</label>
+        <input type="text" id="seoTitle" value="How to Choose a Playschool in Hyderabad: Parent Checklist" maxlength="160">
+        <div class="counter"><span id="titleCount">0 / 60</span><span>aim for about 30 to 60</span></div>
+        <div class="meter" id="titleMeter"><i></i></div>
+        <label for="seoMeta">Meta description</label>
+        <textarea id="seoMeta" maxlength="320">Visiting playschools this year? Use this checklist to compare curriculum, safety, staff and fees before you decide. Written for parents in Hyderabad.</textarea>
+        <div class="counter"><span id="metaCount">0 / 155</span><span>aim for about 70 to 155</span></div>
+        <div class="meter" id="metaMeter"><i></i></div>
+        <label for="seoKw">Target keyword</label>
+        <input type="text" id="seoKw" value="playschool in Hyderabad" maxlength="80">
+        <p class="form-note">Example values are pre-filled. Replace them with your own page.</p>
+      </div>
+      <div>
+        <div class="serp" aria-label="Search result preview">
+          <div class="u">example.com › blog › playschool</div>
+          <div class="t" id="pvTitle"></div>
+          <div class="d" id="pvMeta"></div>
+        </div>
+        <p class="sumline" id="seoSum" aria-live="polite"></p>
+        <ul class="checks" id="seoChecks"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="lab" id="panel-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+    <h3>Campaign Metrics Explorer</h3>
+    <p class="badge">Illustrative sample data. Not results from a real campaign.</p>
+    <div class="presets" id="presets" role="group" aria-label="Sample campaigns">
+      <button class="chip" type="button" data-p="search" aria-pressed="true">Sample search ads</button>
+      <button class="chip" type="button" data-p="display" aria-pressed="false">Sample display ads</button>
+      <button class="chip" type="button" data-p="social" aria-pressed="false">Sample social ads</button>
+    </div>
+    <div class="two">
+      <div id="cmInputs"></div>
+      <div>
+        <dl class="tiles" id="cmTiles"></dl>
+        <div class="funnel" id="cmFunnel" aria-label="Funnel on a log scale"></div>
+        <div class="whatif" id="cmWhat"></div>
+        <p class="warnmsg" id="cmWarn" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lab" id="panel-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+    <h3>Analytics Insight Explorer</h3>
+    <p class="badge">Illustrative sample dataset. Revenue in rupees thousand, one sample year.</p>
+    <div class="ctl">
+      <div><label for="anPeriod">Period</label>
+        <select id="anPeriod">
+          <option value="0-11">Full year</option><option value="0-5">First half</option><option value="6-11">Second half</option>
+          <option value="0-2">Q1 (Jan to Mar)</option><option value="3-5">Q2 (Apr to Jun)</option><option value="6-8">Q3 (Jul to Sep)</option><option value="9-11">Q4 (Oct to Dec)</option>
+        </select></div>
+      <div><span class="sumline" style="display:block;margin:0 0 6px">Region</span>
+        <div class="chips" id="anRegions" role="group" aria-label="Region"></div></div>
+    </div>
+    <div class="two">
+      <div>
+        <div class="chart-wrap" id="anChartWrap"><svg id="anChart" role="img" aria-label="Monthly revenue bar chart"></svg><div class="tip" id="anTip"></div></div>
+        <div class="regions" id="anRegionBars"></div>
+      </div>
+      <div>
+        <h3 style="font-size:1.1rem;margin-bottom:12px">What the data says</h3>
+        <ul class="insights" id="anInsights" aria-live="polite"></ul>
+        <p class="form-note">Use charts to ask why a number moved. They do not prove a cause on their own.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" data-nav="experience" class="sec" aria-labelledby="expH">
+  <div class="sec-head">
+    <p class="eyebrow">Experience</p>
+    <h2 id="expH">Education, work, projects and leadership.</h2>
+    <p class="lede">Dates and titles come from my resume. Open an entry to see what I did and which skills it used.</p>
+  </div>
+  <div class="tl-tools"><span class="mono" style="color:var(--muted);font-size:13px">Newest first</span><button class="btn btn-ghost" type="button" id="tlToggle">Expand all</button></div>
+  <ol class="tl" id="tl">
+    <li><details><summary><h3>Project Intern, iAppSys Technologies Pvt. Ltd.</h3><span class="when">12/2025 – 02/2026 · Hyderabad · Work</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Led the analysis of telecom customer data to identify the key drivers of churn.</li><li>Segmented customers by behavioral patterns to find high-risk groups.</li><li>Identified insights to improve retention and reduce churn probability.</li><li>Delivered data-backed recommendations for business decisions.</li></ul></div>
+      <div><h4>Skills applied</h4><p>Data analysis and interpretation, customer segmentation, Power BI, business problem solving, stakeholder communication</p></div>
+      <button class="btn btn-ghost" type="button" data-open="churn" style="justify-self:start">Read the case study</button></div></details></li>
+    <li><details><summary><h3>Content &amp; Marketing Intern, Kairos Technology Private Limited</h3><span class="when">12/2025 – 02/2026 · Hyderabad · Work</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Created and optimized technology blog and social media content using SEO strategies.</li><li>Ran competitor and market research on emerging trends and positioning.</li><li>Gained exposure to agentic AI solution development.</li><li>Supported digital marketing initiatives by improving content visibility and audience engagement.</li></ul></div>
+      <div><h4>Skills applied</h4><p>SEO fundamentals, content strategy, competitor analysis, market research</p></div>
+      <button class="btn btn-ghost" type="button" data-open="kairos" style="justify-self:start">Read the case study</button></div></details></li>
+    <li><details><summary><h3>Ecommerce Brand Development</h3><span class="when">2025 · Project</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Customized a Shopify storefront for experience and conversion.</li><li>Wrote homepage copy, product descriptions and FAQs.</li><li>Structured navigation, collections and content hierarchy.</li></ul></div>
+      <div><h4>Skills applied</h4><p>Shopify, Excel, website content, product descriptions, website navigation</p></div>
+      <button class="btn btn-ghost" type="button" data-open="shop" style="justify-self:start">Read the case study</button></div></details></li>
+    <li><details><summary><h3>Sales Performance Dashboard</h3><span class="when">2025 · Project</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Built an interactive Power BI dashboard of regional sales performance and trends.</li><li>Analyzed sales data to identify growth patterns.</li></ul></div>
+      <div><h4>Skills applied</h4><p>Power BI, data analysis, data visualization</p></div>
+      <button class="btn btn-ghost" type="button" data-open="dashboard" style="justify-self:start">Read the case study</button></div></details></li>
+    <li><details><summary><h3>Student Trainee, entrepreneurship and startup programs</h3><span class="when">04/2025 – 11/2025 · Leadership</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Took part in entrepreneurship and startup ecosystem programs supporting women-led startups.</li><li>Gained exposure to innovation, networking and business development.</li></ul></div></div></details></li>
+    <li><details><summary><h3>Fundraising Intern, animal welfare NGO</h3><span class="when">04/2025 – 06/2025 · Work</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Supported fundraising campaigns, donor outreach and resource mobilization.</li></ul></div></div></details></li>
+    <li><details><summary><h3>Career Toolkit Development, T.I.M.E Akola and WE Hub</h3><span class="when">2025 · Project</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Researched career options, required skills and interview questions.</li><li>Prepared career mapping guides and learning resources for students.</li></ul></div>
+      <button class="btn btn-ghost" type="button" data-open="toolkit" style="justify-self:start">Read the case study</button></div></details></li>
+    <li><details><summary><h3>Web Development Intern, iAppSys Technologies Pvt. Ltd.</h3><span class="when">01/2025 – 03/2025 · Hyderabad · Work</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Assisted in developing web-based solutions and learned how system workflows and technical requirements fit together.</li><li>Collaborated on a real-time project, which built my problem-solving and logical thinking.</li><li>Gained exposure to end-to-end development and cross-functional coordination.</li></ul></div>
+      <div><h4>Skills applied</h4><p>Teamwork, problem solving, system workflows and technical requirements.</p></div></div></details></li>
+    <li><details><summary><h3>Community Engagement Volunteer</h3><span class="when">05/2024 – 06/2024 · Leadership</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Helped organize community events and outreach programs.</li><li>Supported initiatives to improve community accessibility and awareness.</li></ul></div></div></details></li>
+    <li><details><summary><h3>Startup Idea Competition, Winner</h3><span class="when">Institution Innovation Council (IIC), RBVRR Women's College · Award</span></summary><div class="inner">
+      <div><h4>Highlights</h4><ul><li>Won the Startup Idea Competition run by the Institution Innovation Council at my college.</li></ul></div></div></details></li>
+    <li><details><summary><h3>BBA in Business Analytics, Raja Bahadur Venkata Rama Reddy College</h3><span class="when">05/2023 – 05/2026 · Hyderabad · Education</span></summary><div class="inner">
+      <div><h4>Highlights</h4><ul><li>9.3 CGPA.</li><li>Focus on data analysis and visualization, business intelligence, marketing analytics and statistical thinking.</li></ul></div></div></details></li>
+    <li><details><summary><h3>NCC Cadet</h3><span class="when">2022 – 2024 · Leadership</span></summary><div class="inner">
+      <div><h4>What I did</h4><ul><li>Earned the NCC C Certificate.</li><li>Took part in drills, camps and community service.</li></ul></div></div></details></li>
+  </ol>
+</section>
+
+<section id="learning" data-nav="experience" class="sec" style="padding-top:0" aria-labelledby="learnH">
+  <div class="sec-head">
+    <p class="eyebrow">Certifications &amp; learning</p>
+    <h2 id="learnH">The shelf.</h2>
+    <p class="lede">Ten courses and certifications, all completed.</p>
+  </div>
+  <div class="chips" id="certFilters" role="group" aria-label="Filter certifications">
+    <button class="chip" type="button" data-t="all" aria-pressed="true">All</button>
+    <button class="chip" type="button" data-t="seo" aria-pressed="false">SEO</button>
+    <button class="chip" type="button" data-t="ads" aria-pressed="false">Ads &amp; analytics</button>
+    <button class="chip" type="button" data-t="mkt" aria-pressed="false">Marketing</button>
+    <button class="chip" type="button" data-t="data" aria-pressed="false">Data &amp; business</button>
+  </div>
+  <div class="shelf" id="shelf">
+    <article class="cert" data-topic="seo"><h3>Content-Led SEO with Brian Dean</h3><p class="prov">Semrush Academy</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>Behind my blog and technology content work. See the SEO blog and Kairos case studies.</p></article>
+    <article class="cert" data-topic="ads"><h3>Google Analytics 4</h3><p class="prov">Udemy</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>Analytics fundamentals for understanding how people use a website.</p></article>
+    <article class="cert" data-topic="ads"><h3>Google Ads</h3><p class="prov">Udemy</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>The Campaign Metrics Explorer in the Lab uses the same metrics, with sample data.</p></article>
+    <article class="cert" data-topic="mkt"><h3>Digital Marketing</h3><p class="prov">HubSpot Academy</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>The base for my content, social and campaign thinking.</p></article>
+    <article class="cert" data-topic="mkt"><h3>Email Marketing</h3><p class="prov">Great Learning</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>A course on planning and measuring email campaigns.</p></article>
+    <article class="cert" data-topic="data"><h3>Data Visualisation: Empowering Business with Effective Insights</h3><p class="prov">Tata Group, Forage</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>A virtual job simulation. It sits behind how I design my dashboards.</p></article>
+    <article class="cert" data-topic="data"><h3>Power BI Job Simulation</h3><p class="prov">PwC, Forage</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>A virtual job simulation. It connects to my Power BI dashboards.</p></article>
+    <article class="cert" data-topic="data"><h3>Business Analytics Foundations: Predictive, Prescriptive &amp; Experimental Analytics</h3><p class="prov">LinkedIn</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>Frames how I approach analysis problems.</p></article>
+    <article class="cert" data-topic="data"><h3>Business Analysis Foundations</h3><p class="prov">LinkedIn</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>Concepts, requirements and processes in business analysis.</p></article>
+    <article class="cert" data-topic="data"><h3>Excel Statistics Essential Training</h3><p class="prov">LinkedIn</p><p class="status">✓ Completed</p><button class="more" type="button" aria-expanded="false">Where I use it</button><p class="use" hidden>Statistical techniques for analysis and interpretation in Excel.</p></article>
+  </div>
+</section>
+
+<section id="resume" data-nav="contact" class="sec" style="padding-top:0" aria-labelledby="resH">
+  <div class="sec-head">
+    <p class="eyebrow">Resume</p>
+    <h2 id="resH">The one-page version.</h2>
+  </div>
+  <div class="resume-grid">
+    <div class="card paper">
+      <h3>Summary</h3>
+      <p>Business Analytics graduate (BBA, 9.3 CGPA) from Hyderabad. I write and research for content and marketing, analyze data with Excel, SQL, Power BI and Tableau, and have built a Shopify storefront and dashboards.</p>
+      <h3>Selected experience</h3>
+      <ul><li>Project Intern, iAppSys Technologies Pvt. Ltd., 12/2025 – 02/2026</li><li>Content &amp; Marketing Intern, Kairos Technology Private Limited, 12/2025 – 02/2026</li><li>Fundraising Intern, animal welfare NGO, 04/2025 – 06/2025</li><li>Student Trainee, startup programs, 04/2025 – 11/2025</li></ul>
+      <h3>Selected skills</h3>
+      <p>SEO, keyword research, competitor analysis, content strategy, GA4, Google Ads, Excel, SQL, Python, Power BI, Tableau, customer segmentation, business problem solving, Shopify.</p>
+    </div>
+    <div class="stack">
+      <a class="btn btn-primary" href="Reshmitha_Paricha_Resume.pdf" target="_blank" rel="noopener">Open resume (PDF)</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/reshmithaparicha" target="_blank" rel="noopener">LinkedIn profile</a>
+      <p class="form-note">The PDF opens in a new tab. Use your browser's save option to keep a copy.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" data-nav="contact" class="sec contact" aria-labelledby="conH">
+  <div class="contact-grid">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2 id="conH">Have a project, opportunity, or interesting problem?</h2>
+      <p class="lede" style="margin:16px 0 22px">Tell me what you are working on.</p>
+      <div class="copy-line"><span class="mono" style="color:var(--muted);font-size:12px;width:64px">Email</span><span id="cEmail">reshmitha1279@gmail.com</span><button type="button" data-copy="cEmail">Copy</button></div>
+      <div class="copy-line"><span class="mono" style="color:var(--muted);font-size:12px;width:64px">Phone</span><span id="cPhone">+91 72078 55367</span><button type="button" data-copy="cPhone">Copy</button></div>
+      <div class="copy-line"><span class="mono" style="color:var(--muted);font-size:12px;width:64px">LinkedIn</span><a href="https://linkedin.com/in/reshmithaparicha" target="_blank" rel="noopener">linkedin.com/in/reshmithaparicha</a></div>
+    </div>
+    <div>
+      <form id="cForm" novalidate>
+        <label for="cName" style="margin-top:0">Your name</label>
+        <input type="text" id="cName" autocomplete="name" aria-describedby="eName">
+        <p class="err" id="eName"></p>
+        <label for="cMail">Your email</label>
+        <input type="email" id="cMail" autocomplete="email" aria-describedby="eMail">
+        <p class="err" id="eMail"></p>
+        <label for="cMsg">Message</label>
+        <textarea id="cMsg" aria-describedby="eMsg"></textarea>
+        <p class="err" id="eMsg"></p>
+        <button class="btn btn-primary magnetic" type="submit" style="margin-top:8px">Prepare my message</button>
+        <p class="form-note">This site has no mail server, so nothing is sent from the page. After you submit, you can open your email app or copy the message.</p>
+      </form>
+      <div class="ok-box" id="okBox" hidden>
+        <h3 id="okTitle">Message ready</h3>
+        <p id="okText" style="color:var(--muted);margin-bottom:12px"></p>
+        <div class="links-row"><a class="btn btn-primary" id="mailLink" href="#">Open in email app</a><button class="btn btn-ghost" type="button" id="copyMsg">Copy message</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec colo" style="padding-block:0 56px" aria-label="Colophon">
+  <details>
+    <summary>Colophon: how this site is built</summary>
+    <div class="card" style="margin-top:12px">
+      <p class="lede">A small design system keeps this site consistent. Colours, type and components below are the live tokens the page uses.</p>
+      <div class="swatches" aria-label="Colour tokens">
+        <div class="sw"><i style="background:var(--bg)"></i><span>--bg<br>background</span></div>
+        <div class="sw"><i style="background:var(--surface)"></i><span>--surface<br>cards</span></div>
+        <div class="sw"><i style="background:var(--ink)"></i><span>--ink<br>text</span></div>
+        <div class="sw"><i style="background:var(--accent)"></i><span>--accent<br>the one loud colour</span></div>
+        <div class="sw"><i style="background:var(--indigo)"></i><span>--indigo<br>quiet second voice</span></div>
+        <div class="sw"><i style="background:var(--amber)"></i><span>--amber<br>caution, learning</span></div>
+      </div>
+      <p class="mono" style="font-size:13px;color:var(--muted)">Type: Syne for display, Instrument Sans for text, IBM Plex Mono for labels and data.</p>
+      <div class="specimen" aria-label="Button states">
+        <span class="btn btn-primary">Default</span><span class="btn btn-primary is-hover">Hover</span><span class="btn btn-primary is-focus">Focus</span><span class="btn btn-primary is-disabled">Disabled</span><span class="btn btn-ghost">Ghost</span>
+      </div>
+      <h3 style="font-size:1.1rem;margin:18px 0 6px">Why it is built this way</h3>
+      <ul>
+                <li>One primary action per view keeps choices simple.</li>
+        <li>The progress bar in the header shows how far you have read.</li>
+        <li>The Lab gives something useful before asking for anything.</li>
+        <li>Examples are pre-filled so the first step costs nothing.</li>
+        <li>No made-up statistics, client logos or testimonials appear anywhere.</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 Reshmitha Paricha · Hyderabad, India</span>
+    <span>Content is drawn from my resume and portfolio deck.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+
+/* ---- Edit here: availability indicator ---- */
+var SITE = { available: true, label: "Open to new opportunities", closedLabel: "Not taking new opportunities right now" };
+
+var $ = function(id){ return document.getElementById(id); };
+var qsa = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+var finePointer = window.matchMedia && matchMedia("(hover: hover) and (pointer: fine)").matches;
+function safe(fn){ try { return fn(); } catch(e){ return null; } }
+function store(k, v){ try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch(e){} return null; }
+
+/* availability */
+(function(){
+  var a = $("avail"); $("availText").textContent = SITE.available ? SITE.label : SITE.closedLabel;
+  if (!SITE.available) a.classList.add("off");
+})();
+
+/* headline word reveal */
+(function(){
+  var h = $("headline"), words = h.textContent.trim().split(/\s+/);
+  h.textContent = "";
+  words.forEach(function(w, i){
+    var o = document.createElement("span"); o.className = "w"; o.setAttribute("aria-hidden", "true");
+    var s = document.createElement("span"); s.style.setProperty("--i", i); s.textContent = w;
+    o.appendChild(s); h.appendChild(o); h.appendChild(document.createTextNode(" "));
+  });
+})();
+
+/* theme */
+(function(){
+  var root = document.documentElement, btn = $("themeBtn");
+  var saved = store("rp-theme"); if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  btn.addEventListener("click", function(){
+    var cur = root.getAttribute("data-theme");
+    if (!cur) cur = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    var next = cur === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next); store("rp-theme", next);
+    document.dispatchEvent(new Event("themechange"));
+  });
+})();
+
+/* mobile menu */
+(function(){
+  var btn = $("menuBtn"), nav = $("nav");
+  function set(open){ nav.classList.toggle("open", open); btn.setAttribute("aria-expanded", open ? "true" : "false"); btn.setAttribute("aria-label", open ? "Close menu" : "Open menu"); }
+  btn.addEventListener("click", function(){ set(!nav.classList.contains("open")); });
+  nav.addEventListener("click", function(e){ if (e.target.closest("a")) set(false); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape" && nav.classList.contains("open")) { set(false); btn.focus(); } });
+})();
+
+/* active section + progress */
+(function(){
+  var links = qsa(".nav a[data-nav]"), secs = qsa("section[data-nav]");
+  function mark(name){ links.forEach(function(a){ if (a.getAttribute("data-nav") === name) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current"); }); }
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(ents){
+      ents.forEach(function(e){ if (e.isIntersecting) mark(e.target.getAttribute("data-nav")); });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    secs.forEach(function(s){ io.observe(s); });
+  }
+  var prog = $("prog"), ticking = false;
+  function upd(){
+    var h = document.documentElement.scrollHeight - innerHeight;
+    prog.style.transform = "scaleX(" + (h > 0 ? Math.min(1, Math.max(0, scrollY / h)) : 0) + ")";
+    ticking = false;
+  }
+  addEventListener("scroll", function(){ if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+  addEventListener("resize", upd); upd();
+})();
+
+/* magnetic buttons */
+if (finePointer && !reduce) {
+  qsa(".magnetic").forEach(function(b){
+    b.addEventListener("pointermove", function(e){
+      var r = b.getBoundingClientRect();
+      var x = (e.clientX - (r.left + r.width / 2)) / r.width, y = (e.clientY - (r.top + r.height / 2)) / r.height;
+      b.style.transform = "translate(" + (x * 8).toFixed(1) + "px," + (y * 6).toFixed(1) + "px)";
+    });
+    b.addEventListener("pointerleave", function(){ b.style.transform = ""; });
+  });
+}
+
+/* copy buttons */
+qsa("[data-copy]").forEach(function(b){
+  b.addEventListener("click", function(){
+    var el = $(b.getAttribute("data-copy")), old = b.textContent;
+    function done(t){ b.textContent = t; setTimeout(function(){ b.textContent = old; }, 1400); }
+    function fb(){ var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); done("Selected"); }
+    try { navigator.clipboard.writeText(el.textContent.trim()).then(function(){ done("Copied"); }, fb); } catch(e){ fb(); }
+  });
+});
+
+/* about: interest cards */
+qsa(".interest").forEach(function(c){
+  var btn = c.querySelector("button"), body = c.querySelector(".body");
+  btn.addEventListener("click", function(){
+    var open = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", open ? "false" : "true"); body.hidden = open; c.classList.toggle("open", !open);
+  });
+});
+
+/* experience timeline */
+(function(){
+  var tl = $("tl"), items = qsa("details", tl), tog = $("tlToggle");
+  tog.addEventListener("click", function(){
+    var anyClosed = items.some(function(d){ return !d.open; });
+    items.forEach(function(d){ d.open = anyClosed; });
+    tog.textContent = anyClosed ? "Collapse all" : "Expand all";
+  });
+  function fill(){
+    var r = tl.getBoundingClientRect(), vh = innerHeight;
+    var p = (vh * 0.6 - r.top) / r.height;
+    tl.style.setProperty("--p", Math.max(0, Math.min(1, p)).toFixed(3));
+  }
+  addEventListener("scroll", function(){ requestAnimationFrame(fill); }, { passive: true }); fill();
+})();
+
+/* certifications */
+(function(){
+  var fs = qsa("#certFilters .chip"), cards = qsa("#shelf .cert");
+  fs.forEach(function(b){ b.addEventListener("click", function(){
+    var t = b.getAttribute("data-t");
+    fs.forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+    cards.forEach(function(c){ c.hidden = !(t === "all" || c.getAttribute("data-topic") === t); });
+  }); });
+  cards.forEach(function(c){
+    var m = c.querySelector(".more"), u = c.querySelector(".use");
+    m.addEventListener("click", function(){ var o = m.getAttribute("aria-expanded") === "true"; m.setAttribute("aria-expanded", o ? "false" : "true"); u.hidden = o; });
+  });
+})();
+
+/* contact form */
+(function(){
+  var f = $("cForm"), box = $("okBox"), msgCache = "";
+  function err(id, m, field){ $(id).textContent = m; if (field) { if (m) field.setAttribute("aria-invalid", "true"); else field.removeAttribute("aria-invalid"); } }
+  f.addEventListener("submit", function(e){
+    e.preventDefault();
+    var n = $("cName"), m = $("cMail"), g = $("cMsg"), bad = null;
+    var name = n.value.trim(), mail = m.value.trim(), msg = g.value.trim();
+    err("eName", name.length < 2 ? "Please enter your name." : "", n); if (name.length < 2) bad = bad || n;
+    var okMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail);
+    err("eMail", okMail ? "" : "Please enter a valid email address, like name@company.com.", m); if (!okMail) bad = bad || m;
+    err("eMsg", msg.length < 10 ? "Please write at least a short message (10 characters)." : "", g); if (msg.length < 10) bad = bad || g;
+    if (bad) { box.hidden = true; bad.focus(); return; }
+    msgCache = "Hi Reshmitha,\n\n" + msg + "\n\nFrom: " + name + " (" + mail + ")";
+    var subj = "Portfolio enquiry from " + name;
+    $("mailLink").href = "mailto:reshmitha1279@gmail.com?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(msgCache);
+    $("okText").textContent = "Nothing has been sent yet. Open your email app to send it, or copy the message and email reshmitha1279@gmail.com.";
+    box.hidden = false; $("okTitle").setAttribute("tabindex", "-1"); $("okTitle").focus();
+  });
+  $("copyMsg").addEventListener("click", function(){
+    var b = $("copyMsg"), old = b.textContent;
+    function done(t){ b.textContent = t; setTimeout(function(){ b.textContent = old; }, 1600); }
+    try { navigator.clipboard.writeText(msgCache).then(function(){ done("Copied"); }, function(){ done("Copy failed. Select the text manually."); }); } catch(e){ done("Copy not available here"); }
+  });
+})();
+
+/* ---- Data: skills ---- */
+var CATS = [["all","All"],["marketing","Marketing"],["analytics","Analytics"],["ecommerce","E-commerce & Web"],["research","Research & Strategy"]];
+var SKILLS = [
+ {id:"seo",name:"SEO Fundamentals",cat:"marketing",st:"applied",desc:"Applied to blog and technology content: structuring posts for readability and search. Backed by the Content-Led SEO course.",proj:["seoblog","kairos"]},
+ {id:"kw",name:"Keyword Research",cat:"marketing",st:"learning",desc:"Used basic keyword strategy to choose blog topics and shape posts.",proj:["seoblog"]},
+ {id:"content",name:"Content Strategy",cat:"marketing",st:"applied",desc:"Supported content strategy for better reach during my internship.",proj:["kairos"]},
+ {id:"social",name:"Social Media Management",cat:"marketing",st:"applied",desc:"Created and optimized social media content for a technology audience.",proj:["kairos"]},
+ {id:"comp",name:"Competitor Analysis",cat:"marketing",st:"applied",desc:"Researched competitors to spot emerging trends and positioning opportunities.",proj:["kairos"]},
+ {id:"ads",name:"Google Ads Fundamentals",cat:"marketing",st:"learning",desc:"Google Ads fundamentals from the Udemy course.",proj:[],lab:"Try the Campaign Metrics Explorer"},
+ {id:"ga4",name:"Google Analytics 4 Fundamentals",cat:"marketing",st:"learning",desc:"Google Analytics 4 fundamentals from the Udemy course.",proj:[]},
+ {id:"writing",name:"Creative Writing",cat:"marketing",st:"applied",desc:"Wrote blogs for parents and customer-facing website copy for a Shopify store.",proj:["seoblog","shop"]},
+ {id:"excel",name:"Excel",cat:"analytics",st:"known",desc:"Used for data analysis and calculations, including on my e-commerce project.",proj:["shop"]},
+ {id:"powerbi",name:"Power BI",cat:"analytics",st:"applied",desc:"Built interactive dashboards: a customer churn dashboard and a sales performance dashboard of KPIs and regional trends.",proj:["churn","dashboard"]},
+ {id:"tableau",name:"Tableau",cat:"analytics",st:"known",desc:"Used alongside Power BI to visualize data.",proj:[]},
+ {id:"sql",name:"SQL",cat:"analytics",st:"known",desc:"Used for querying and analyzing data.",proj:[]},
+ {id:"analysis",name:"Data Analysis",cat:"analytics",st:"applied",desc:"Analyzed sales data to identify growth patterns and compared churn across customer groups.",proj:["churn","dashboard"],lab:"Try the Analytics Insight Explorer"},
+ {id:"viz",name:"Data Visualization",cat:"analytics",st:"applied",desc:"Turned data into clear visuals: churn patterns by service and contract, and sales KPIs by region.",proj:["churn","dashboard"]},
+ {id:"shopify",name:"Shopify",cat:"ecommerce",st:"applied",desc:"Designed and customized the Sendriya Life storefront with a focus on user experience.",proj:["shop"]},
+ {id:"webcontent",name:"Website Content",cat:"ecommerce",st:"applied",desc:"Wrote homepage content, FAQs and customer-facing website copy.",proj:["shop"]},
+ {id:"prodesc",name:"Product Descriptions",cat:"ecommerce",st:"applied",desc:"Wrote product descriptions for the storefront.",proj:["shop"]},
+ {id:"nav",name:"Website Navigation",cat:"ecommerce",st:"applied",desc:"Structured navigation, collections and content hierarchy.",proj:["shop"]},
+ {id:"cro",name:"Conversion Optimization Fundamentals",cat:"ecommerce",st:"learning",desc:"Applied to the storefront: structure, copy and navigation designed around the customer's path.",proj:["shop"]},
+ {id:"market",name:"Market Research",cat:"research",st:"applied",desc:"Ran market and competitor research during my internship and researched career paths for a student toolkit.",proj:["kairos","toolkit"]},
+ {id:"brand",name:"Brand Positioning",cat:"research",st:"learning",desc:"From my studies, and a lens I use when researching competitors.",proj:[]},
+ {id:"journey",name:"Customer Journey Mapping",cat:"research",st:"learning",desc:"Shaped how I structured the storefront navigation.",proj:["shop"]},
+ {id:"techres",name:"Technology and Industry Research",cat:"research",st:"applied",desc:"Researched technology topics, including agentic AI solutions, to write accurate content.",proj:["kairos"]},
+ {id:"python",name:"Python",cat:"analytics",st:"known",desc:"Used for working with and analyzing data.",proj:[]},
+ {id:"segment",name:"Customer Segmentation",cat:"analytics",st:"applied",desc:"Segmented telecom customers by behavioral patterns to find high-risk groups during my iAppSys internship.",proj:["churn"]},
+ {id:"stats",name:"Statistical Analysis",cat:"analytics",st:"learning",desc:"From the Excel Statistics Essential Training course on LinkedIn and statistical thinking in my degree.",proj:[]},
+ {id:"req",name:"Requirement Gathering",cat:"research",st:"learning",desc:"From the Business Analysis Foundations course and my web development internship, where I saw how technical requirements fit together.",proj:[]},
+ {id:"bps",name:"Business Problem Solving",cat:"research",st:"applied",desc:"Framed churn as a business problem and turned the findings into retention recommendations.",proj:["churn"]},
+ {id:"stake",name:"Stakeholder Communication",cat:"research",st:"known",desc:"Delivered data-backed recommendations during my internship.",proj:["churn"]},
+ {id:"web",name:"Web Development",cat:"ecommerce",st:"learning",desc:"From a web development internship at iAppSys: system workflows and end-to-end development.",proj:[]}
+];
+var SK = {}; SKILLS.forEach(function(s){ SK[s.id] = s; });
+
+/* ---- Data: projects ---- */
+var PROJ = {
+ churn:{title:"Telecom Customer Churn Analysis",
+  context:"Project Intern at iAppSys Technologies Pvt. Ltd., Hyderabad, 12/2025 to 02/2026. I led the analysis of telecom customer data to find the key drivers of churn. The data covers about 7,000 customers, with fields for internet service, contract type, tenure and monthly charges.",
+  objective:"Show which customer groups churn more, so that the groups worth a closer look are easy to spot.",
+  role:"Project Intern. Led the analysis and built the dashboard.",
+  tools:["Power BI"],
+  process:["Analyzed the customer data to identify the key drivers of churn.","Segmented customers by behavioral patterns to find high-risk groups.","Counted customers by internet service, contract type and churn status.","Used 100% stacked bars to compare churn inside each group, so group size does not hide the pattern.","Plotted tenure and monthly charges to see when customers leave.","Used a treemap to show how customers split across contract types."],
+  deliverables:["One dashboard page with eight visuals: pie, donut, three stacked bars, two area charts and a treemap.","Data-backed recommendations to improve retention and reduce churn."],
+  results:["Overall, 26.54% of customers (1.87K) are marked as churned and 73.46% (5.17K) stayed.","Fiber optic is the largest internet group (43.96% of customers) and shows visibly more churn than DSL or no internet service.","Month-to-month is the largest contract group and shows far more churn than one-year or two-year contracts.","Churn is concentrated among customers with short tenure.","These are patterns on the dashboard. They show where to look, and they do not prove why customers leave."],
+  media:[{src:"assets/churn-dashboard.png",alt:"Power BI customer churn dashboard with eight charts",w:798,h:511}], slot:""},
+ dashboard:{title:"Sales Performance Dashboard",
+  context:"A Power BI project to analyze sales data and surface performance insights. Year: 2025.",
+  objective:"Analyze sales data and uncover performance insights.",
+  role:"Analyst and dashboard builder.",
+  tools:["Power BI"],
+  process:["Analyzed the sales data to identify growth patterns.","Built an interactive dashboard in Power BI.","Visualized KPIs and regional trends."],
+  deliverables:["An interactive Power BI dashboard covering KPIs, regional sales performance and trends."],
+  results:["Simplified complex data into clear insights.","Showed how visuals support decision-making."],
+  media:[], slot:"", labLink:"Try a working sample in the Analytics Insight Explorer"},
+ shop:{title:"E-commerce Brand Development",
+  context:"A brand and storefront for Sendriya Life, built on Shopify. The store sells Himalayan Shilajit resin, flower teas, leaves, powders and seeds. Year: 2025.",
+  objective:"Build a customer-friendly storefront designed for a good experience and for conversion.",
+  role:"Storefront designer and website content writer.",
+  tools:["Shopify","Excel","AI-assisted content tools"],
+  process:["Designed and customized the Shopify storefront.","Wrote homepage content, product descriptions, FAQs and website copy.","Structured navigation (Home, Best Sellers, Collections, Shop All, Blogs, About Us, Contact), collections and content hierarchy.","Used AI-powered tools to speed up content creation and website optimization."],
+  deliverables:["Shopify storefront","Homepage content","Product descriptions and FAQs","Navigation and collection structure"],
+  results:["The learning is how structure and copy shape the customer's path."],
+  media:[{src:"assets/sendriya-home.jpg",alt:"Sendriya Life storefront home page with the headline From the mountain. Into your daily ritual., a jar of Himalayan Shilajit resin and the menu Home, Best Sellers, Collections, Shop All, Blogs, About Us, Contact",w:1100,h:525},{src:"assets/sendriya-recipes.jpg",alt:"Recipes from Nani's Kitchen page of the storefront blog, showing three butterfly pea drink recipes",w:1100,h:533}], slot:""},
+ seoblog:{title:"SEO Blog Content for a Playschool Brand",
+  context:"Blog content for a playschool brand, written to improve online visibility and engagement.",
+  objective:"Improve online visibility and engagement through content.",
+  role:"Content writer.",
+  tools:["Basic SEO and keyword strategy"],
+  process:["Wrote 10 to 15 blog posts targeting parents.","Applied basic SEO and keyword strategy.","Structured each post for readability."],
+  deliverables:["10 to 15 blog posts for parents"],
+  results:["Improved content relevance and consistency.","Strengthened practical SEO skills."],
+  media:[], slot:""},
+ kairos:{title:"Technology Content & AI Research at Kairos",
+  context:"Content & Marketing Intern at Kairos Technology Private Limited, Hyderabad, from 12/2025 to 02/2026. Product and client details are kept general.",
+  objective:"Create SEO-focused technology content and understand the AI solutions behind it.",
+  role:"Content & Marketing Intern.",
+  tools:["SEO strategies","Competitor and market research"],
+  process:["Created and optimized technology blogs and social media content using SEO strategies.","Conducted competitor and market research to identify trends and positioning opportunities.","Learned about agentic AI solution development, including architecture and implementation concepts."],
+  deliverables:["Technology-focused blog posts","Social media content","Competitor and market research findings"],
+  results:["Understood the product beyond its marketing surface.","Practiced turning technical topics into content."],
+  media:[], slot:""},
+ zestro:{title:"Zestro Stall Promotional Posters",
+  context:"Promotional posters for a food stall called Zestro.",
+  objective:"Attract and engage visitors to the stall.",
+  role:"Poster designer.",
+  tools:["Poster design"],
+  process:["A teaser poster that builds curiosity with the line 'Prepare for a surprise' and the words 'Food & Fun'.","A second poster with a scan-to-explore menu code and a three-step call to action: Scan, Select, Pay."],
+  deliverables:["Teaser poster","Scan-to-explore menu poster"],
+  results:["Practiced pairing a curiosity hook with one clear next step."],
+  media:[{src:"assets/zestora.jpg",alt:"Zestora teaser poster with a bowl of gulab jamun and ice cream and the words Food and Fun",w:480,h:684},{src:"assets/zestro-menu.jpg",alt:"Zestro poster reading Scan to explore the menu with a QR code and the steps Scan, Select, Pay",w:480,h:679}], slot:""},
+ toolkit:{title:"Career Toolkit for Students",
+  context:"A career toolkit for students, built with T.I.M.E Akola and WE Hub. Year: 2025.",
+  objective:"Provide structured career guidance that helps students choose a path.",
+  role:"Career Toolkit contributor.",
+  tools:["Research","Documentation"],
+  process:["Researched career options and the skills each one needs.","Collected interview questions.","Developed organized guides and learning resources.","Simplified complex information so it is easy to understand."],
+  deliverables:["Career mapping guides","Learning resources for students"],
+  results:["Practiced simplifying complex information.","The aim was clearer career decisions."],
+  media:[], slot:""}
+};
+
+/* ---- Skills explorer ---- */
+var selSkill = "seo", catSel = "all";
+function renderSkillGrid(){
+  var g = $("skillGrid"); g.textContent = "";
+  SKILLS.filter(function(s){ return catSel === "all" || s.cat === catSel; }).forEach(function(s){
+    var b = document.createElement("button"); b.type = "button"; b.className = "skill"; b.setAttribute("data-id", s.id); b.setAttribute("data-st", s.st);
+    b.setAttribute("aria-pressed", s.id === selSkill ? "true" : "false");
+        var t = document.createElement("span"); t.textContent = s.name;
+        b.appendChild(t); g.appendChild(b);
+  });
+}
+function showSkill(id){
+  var s = SK[id]; if (!s) return; var d = $("skillDetail"); d.textContent = "";
+  var st = document.createElement("span"); st.className = "st"; st.textContent = (CATS.filter(function(c){ return c[0] === s.cat; })[0] || ["", ""])[1];
+  var h = document.createElement("h3"); h.textContent = s.name;
+  var p = document.createElement("p"); p.textContent = s.desc;
+  d.appendChild(st); d.appendChild(h); d.appendChild(p);
+  if (s.proj.length || s.lab) {
+    var sn = document.createElement("div"); sn.className = "seen"; sn.textContent = "See it in"; d.appendChild(sn);
+    var row = document.createElement("div"); row.className = "links-row";
+    s.proj.forEach(function(pid){ var b = document.createElement("button"); b.type = "button"; b.className = "btn btn-ghost"; b.textContent = PROJ[pid].title; b.addEventListener("click", function(){ openProject(pid); }); row.appendChild(b); });
+    if (s.lab) { var a = document.createElement("a"); a.className = "btn btn-ghost"; a.href = "#lab"; a.textContent = s.lab; a.addEventListener("click", function(){ setTab(s.id === "ads" ? "b" : "c"); }); row.appendChild(a); }
+    d.appendChild(row);
+  } else {
+      }
+}
+function selectSkill(id){
+  var s = SK[id]; if (!s) return; selSkill = id;
+  if (catSel !== "all" && s.cat !== catSel) { catSel = "all"; renderCats(); }
+  renderSkillGrid(); showSkill(id);
+}
+function renderCats(){
+  var c = $("skillCats"); c.textContent = "";
+  CATS.forEach(function(x){
+    var b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.textContent = x[1]; b.setAttribute("aria-pressed", x[0] === catSel ? "true" : "false");
+    b.addEventListener("click", function(){ catSel = x[0]; renderCats(); renderSkillGrid(); showSkill(selSkill); }); c.appendChild(b);
+  });
+}
+(function(){
+  renderCats(); renderSkillGrid(); showSkill(selSkill);
+  var g = $("skillGrid");
+  g.addEventListener("click", function(e){ var b = e.target.closest(".skill"); if (b) { selSkill = b.getAttribute("data-id"); renderSkillGrid(); showSkill(selSkill); var nb = g.querySelector('[data-id="' + selSkill + '"]'); if (nb) nb.focus(); } });
+  g.addEventListener("pointerover", function(e){ if (e.pointerType !== "mouse") return; var b = e.target.closest(".skill"); if (b) showSkill(b.getAttribute("data-id")); });
+  g.addEventListener("pointerleave", function(){ showSkill(selSkill); });
+})();
+
+/* ---- Projects ---- */
+(function(){
+  var fs = qsa("#projFilters .chip"), cards = qsa("#projGrid .proj");
+  fs.forEach(function(b){ b.addEventListener("click", function(){
+    var f = b.getAttribute("data-f"), n = 0;
+    fs.forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+    cards.forEach(function(c){ var show = f === "all" || c.getAttribute("data-cats").split(" ").indexOf(f) !== -1; c.hidden = !show; if (show) n++; });
+    $("projEmpty").hidden = n !== 0;
+  }); });
+})();
+
+var dlg = $("caseDlg"), lastFocus = null;
+function sec(label, node){ var s = document.createElement("section"); var h = document.createElement("h3"); h.textContent = label; var d = document.createElement("div"); d.appendChild(node); s.appendChild(h); s.appendChild(d); return s; }
+function para(t){ var p = document.createElement("p"); p.textContent = t; return p; }
+function list(a){ var u = document.createElement("ul"); a.forEach(function(t){ var l = document.createElement("li"); l.textContent = t; u.appendChild(l); }); return u; }
+function openProject(id){
+  var p = PROJ[id]; if (!p) return;
+  lastFocus = document.activeElement; $("caseTitle").textContent = p.title;
+  var b = $("caseBody"); b.textContent = "";
+  b.appendChild(sec("Context", para(p.context)));
+  b.appendChild(sec("Objective", para(p.objective)));
+  b.appendChild(sec("My role", para(p.role)));
+  b.appendChild(sec("Tools used", list(p.tools)));
+  b.appendChild(sec("Process", list(p.process)));
+  b.appendChild(sec("Deliverables", list(p.deliverables)));
+  b.appendChild(sec("Results and learnings", list(p.results)));
+  var wrap = document.createElement("div");
+  if (p.media.length) {
+    var sh = document.createElement("div"); sh.className = "shots";
+    p.media.forEach(function(m){ var i = document.createElement("img"); i.src = m.src; i.alt = m.alt; i.width = m.w; i.height = m.h; i.loading = "lazy"; sh.appendChild(i); });
+    wrap.appendChild(sh);
+  } else if (p.slot) { var sl = document.createElement("p"); sl.className = "slot"; sl.textContent = p.slot; wrap.appendChild(sl); }
+  if (p.labLink) { var a = document.createElement("button"); a.type = "button"; a.className = "btn btn-ghost"; a.style.marginTop = "12px"; a.textContent = p.labLink; a.addEventListener("click", function(){ dlg.close(); setTab("c"); location.hash = "#lab"; var l = $("lab"); if (l) l.scrollIntoView(); }); wrap.appendChild(a); }
+  if (wrap.childNodes.length) b.appendChild(sec(p.media.length ? "Screenshots" : "Related", wrap));
+  if (dlg.showModal) { if (!dlg.open) dlg.showModal(); } else dlg.setAttribute("open", "");
+  document.body.classList.add("lock"); dlg.scrollTop = 0;
+}
+dlg.addEventListener("close", function(){ document.body.classList.remove("lock"); if (lastFocus && lastFocus.focus) lastFocus.focus(); });
+dlg.addEventListener("click", function(e){ if (e.target === dlg) dlg.close(); });
+$("caseClose").addEventListener("click", function(){ dlg.close(); });
+document.addEventListener("click", function(e){ var o = e.target.closest("[data-open]"); if (o) openProject(o.getAttribute("data-open")); });
+
+/* ---- Hero skill map (canvas) ---- */
+(function(){
+  var cv = $("net"); if (!cv || !cv.getContext) return;
+  var ctx = cv.getContext("2d"), noCtx = !ctx;
+  var RINGS = [
+    {r:.34, sp:.00018, items:[["seo","SEO","m"],["content","Content","m"],["kw","Keywords","m"],["comp","Competitors","m"]]},
+    {r:.60, sp:-.00012, items:[["powerbi","Power BI","a"],["sql","SQL","a"],["excel","Excel","a"],["tableau","Tableau","a"],["viz","Data Viz","a"],["python","Python","a"]]},
+    {r:.80, sp:.00008, items:[["shopify","Shopify","e"],["ga4","GA4","m"],["ads","Google Ads","m"],["market","Research","e"],["brand","Brand","e"]]}
+  ];
+  var nodes = [];
+  RINGS.forEach(function(rg, ri){ rg.items.forEach(function(it, i){
+    nodes.push({id:it[0], label:it[1], grp:it[2], ring:ri, base:(i / rg.items.length) * Math.PI * 2 + ri * 0.7, x:0, y:0, hot:0});
+  }); });
+  var mk = $("mapKeys");
+  if (mk) nodes.forEach(function(n){
+    var b = document.createElement("button"); b.type = "button"; b.textContent = n.label;
+    b.addEventListener("click", function(){ selectSkill(n.id); var s = $("skills"); if (s) s.scrollIntoView(); });
+    mk.appendChild(b);
+  });
+  var W = 0, H = 0, dpr = 1, mx = -999, my = -999, over = false, hover = null, running = false, t0 = performance.now();
+  var C = {};
+  function colors(){
+    var cs = getComputedStyle(document.documentElement);
+    C.accent = cs.getPropertyValue("--accent").trim(); C.indigo = cs.getPropertyValue("--indigo").trim();
+    C.ink = cs.getPropertyValue("--ink").trim(); C.muted = cs.getPropertyValue("--muted").trim(); C.line = cs.getPropertyValue("--line").trim();
+    C.bg = cs.getPropertyValue("--surface").trim(); C.aink = cs.getPropertyValue("--accent-ink").trim();
+  }
+  function size(){
+    var r = cv.getBoundingClientRect(); W = r.width; H = r.height; dpr = Math.min(2, window.devicePixelRatio || 1);
+    if (noCtx) return;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); ctx.setTransform(dpr, 0, 0, dpr, 0, 0); draw(performance.now());
+  }
+  function col(g){ return g === "m" ? C.accent : g === "a" ? C.indigo : C.ink; }
+  function place(now){
+    var half = Math.min(W, H) / 2, cx = W / 2, cy = H / 2;
+    var px = over ? (mx - cx) / half : 0, py = over ? (my - cy) / half : 0;
+    nodes.forEach(function(n){
+      var rg = RINGS[n.ring], a = n.base + (reduce ? 0 : (now - t0) * rg.sp);
+      var rr = rg.r * half * 0.94;
+      n.x = cx + Math.cos(a) * rr + px * 7 * (n.ring + 1);
+      n.y = cy + Math.sin(a) * rr + py * 7 * (n.ring + 1);
+      var d = Math.hypot(n.x - mx, n.y - my);
+      n.hot += ((over && d < 70 ? 1 : 0) - n.hot) * 0.18;
+    });
+  }
+  function draw(now){
+    if (!W || noCtx) return; colors(); place(now);
+    ctx.clearRect(0, 0, W, H);
+    var half = Math.min(W, H) / 2, cx = W / 2, cy = H / 2;
+    ctx.lineWidth = 1; ctx.strokeStyle = C.line; ctx.setLineDash([3, 6]);
+    RINGS.forEach(function(rg){ ctx.beginPath(); ctx.arc(cx, cy, rg.r * half * 0.94, 0, Math.PI * 2); ctx.stroke(); });
+    ctx.setLineDash([]);
+    for (var i = 0; i < nodes.length; i++) for (var j = i + 1; j < nodes.length; j++) {
+      var a = nodes[i], b = nodes[j]; if (a.ring === b.ring) continue;
+      var d = Math.hypot(a.x - b.x, a.y - b.y); if (d < half * 0.42) {
+        ctx.globalAlpha = (1 - d / (half * 0.42)) * 0.5; ctx.strokeStyle = C.muted;
+        ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+      }
+    }
+    ctx.globalAlpha = 1;
+    nodes.forEach(function(n){
+      if (n.hot > 0.05) { ctx.globalAlpha = n.hot * 0.9; ctx.strokeStyle = col(n.grp); ctx.beginPath(); ctx.moveTo(n.x, n.y); ctx.lineTo(mx, my); ctx.stroke(); ctx.globalAlpha = 1; }
+    });
+    ctx.beginPath(); ctx.fillStyle = C.accent; ctx.arc(cx, cy, 24, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = C.aink; ctx.font = "700 13px " + getComputedStyle(document.body).getPropertyValue("--f-mono"); ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText("RP", cx, cy + 1);
+    var fs = W < 420 ? 10 : 11.5;
+    ctx.font = "500 " + fs + "px IBM Plex Mono, ui-monospace, monospace";
+    nodes.forEach(function(n){
+      var r = 5 + n.hot * 4;
+      ctx.beginPath(); ctx.fillStyle = col(n.grp); ctx.arc(n.x, n.y, r, 0, Math.PI * 2); ctx.fill();
+      var tw = ctx.measureText(n.label).width, lx = Math.max(tw / 2 + 4, Math.min(W - tw / 2 - 4, n.x));
+      ctx.fillStyle = n.hot > 0.4 ? C.ink : C.muted; ctx.textAlign = "center"; ctx.textBaseline = "top";
+      ctx.fillText(n.label, lx, n.y + r + 4);
+    });
+  }
+  function frame(now){ if (!running) return; draw(now); requestAnimationFrame(frame); }
+  function start(){ if (running || reduce || noCtx) return; running = true; requestAnimationFrame(frame); }
+  function stop(){ running = false; }
+  function pt(e){ var r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; }
+  function pick(){ var best = null, bd = 22; nodes.forEach(function(n){ var d = Math.hypot(n.x - mx, n.y - my); if (d < bd) { bd = d; best = n; } }); return best; }
+  cv.addEventListener("pointermove", function(e){ var p = pt(e); mx = p[0]; my = p[1]; over = true; hover = pick(); cv.style.cursor = hover ? "pointer" : "default"; if (reduce) draw(performance.now()); });
+  cv.addEventListener("pointerleave", function(){ over = false; mx = my = -999; hover = null; cv.style.cursor = "default"; if (reduce) draw(performance.now()); });
+  cv.addEventListener("click", function(e){ var p = pt(e); mx = p[0]; my = p[1]; place(performance.now()); var n = pick(); if (n) { selectSkill(n.id); var s = $("skills"); if (s) s.scrollIntoView(); } });
+  addEventListener("resize", size); document.addEventListener("themechange", function(){ draw(performance.now()); });
+  if (window.matchMedia) matchMedia("(prefers-color-scheme: dark)").addEventListener && matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function(){ draw(performance.now()); });
+  if ("IntersectionObserver" in window) new IntersectionObserver(function(es){ es[0].isIntersecting ? start() : stop(); }).observe(cv); else start();
+  document.addEventListener("visibilitychange", function(){ document.hidden ? stop() : start(); });
+  size();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ draw(performance.now()); });
+})();
+
+/* ---- Lab: tabs ---- */
+function setTab(k){
+  ["a","b","c"].forEach(function(x){
+    var t = $("tab-" + x), p = $("panel-" + x), on = x === k;
+    t.setAttribute("aria-selected", on ? "true" : "false"); t.tabIndex = on ? 0 : -1; p.hidden = !on;
+  });
+}
+(function(){
+  var tabs = ["a","b","c"];
+  tabs.forEach(function(x, i){
+    var t = $("tab-" + x);
+    t.addEventListener("click", function(){ setTab(x); });
+    t.addEventListener("keydown", function(e){
+      var n = null;
+      if (e.key === "ArrowRight") n = (i + 1) % 3; else if (e.key === "ArrowLeft") n = (i + 2) % 3; else if (e.key === "Home") n = 0; else if (e.key === "End") n = 2;
+      if (n !== null) { e.preventDefault(); setTab(tabs[n]); $("tab-" + tabs[n]).focus(); }
+    });
+  });
+})();
+
+/* ---- Lab A: SEO audit simulator ---- */
+(function(){
+  var T = $("seoTitle"), M = $("seoMeta"), K = $("seoKw");
+  function hl(el, text, kw){
+    el.textContent = "";
+    if (!kw) { el.textContent = text; return; }
+    var lo = text.toLowerCase(), k = kw.toLowerCase(), pos = 0, i;
+    while ((i = lo.indexOf(k, pos)) !== -1) {
+      if (i > pos) el.appendChild(document.createTextNode(text.slice(pos, i)));
+      var b = document.createElement("b"); b.textContent = text.slice(i, i + k.length); el.appendChild(b); pos = i + k.length;
+    }
+    el.appendChild(document.createTextNode(text.slice(pos)));
+  }
+  function meter(id, len, lo, hi){
+    var m = $(id), bar = m.firstElementChild; bar.style.width = Math.min(100, len / hi * 100) + "%";
+    m.classList.toggle("warn", len > 0 && (len < lo || len > hi));
+  }
+  function run(){
+    var t = T.value.trim(), m = M.value.trim(), k = K.value.trim(), lt = t.toLowerCase(), lm = m.toLowerCase(), lk = k.toLowerCase();
+    $("titleCount").textContent = t.length + " / 60"; $("metaCount").textContent = m.length + " / 155";
+    meter("titleMeter", t.length, 30, 60); meter("metaMeter", m.length, 70, 155);
+    var pt = t ? (t.length > 60 ? t.slice(0, 59).trim() + "…" : t) : "Your page title appears here";
+    var pm = m ? (m.length > 155 ? m.slice(0, 154).trim() + "…" : m) : "Your meta description appears here.";
+    $("pvTitle").textContent = pt; hl($("pvMeta"), pm, k);
+    var items = [], missing = [];
+    function add(l, h, d){ items.push({l:l, h:h, d:d}); }
+    if (!t) { missing.push("title"); add("fail", "Title", "No title yet. Every page needs one."); }
+    else if (t.length < 30) add("warn", "Title length", t.length + " characters. A little short. Aim for about 30 to 60 so it can carry the keyword and some context.");
+    else if (t.length <= 60) add("pass", "Title length", t.length + " characters. Within the usual range that is shown in full.");
+    else add("warn", "Title length", t.length + " characters. Longer than about 60, so it may be cut off in results.");
+    if (!m) { missing.push("meta description"); add("fail", "Meta description", "No description yet. It is your short pitch in the results."); }
+    else if (m.length < 70) add("warn", "Meta description length", m.length + " characters. Quite short. About 70 to 155 gives room to explain the page.");
+    else if (m.length <= 155) add("pass", "Meta description length", m.length + " characters. Within the usual range.");
+    else add("warn", "Meta description length", m.length + " characters. Longer than about 155, so it may be cut off.");
+    if (!k) { missing.push("target keyword"); add("fail", "Target keyword", "Add the phrase this page should rank for to check where it appears."); }
+    else {
+      if (t) { var pos = lt.indexOf(lk); if (pos === -1) add("fail", "Keyword in title", "The keyword does not appear in the title."); else if (pos <= 25) add("pass", "Keyword in title", "Found near the start of the title, where it is easy to spot."); else add("warn", "Keyword in title", "Found, but late in the title. Consider moving it earlier."); }
+      if (m) { if (lm.indexOf(lk) === -1) add("warn", "Keyword in description", "The exact keyword is missing. Using it can show the page matches the search."); else add("pass", "Keyword in description", "The keyword appears in the description."); }
+    }
+    if (t && m && lt === lm) add("warn", "Title and description", "They are identical. Use the description to add something the title does not say.");
+    if (m && /\b(learn|discover|compare|find|get|read|see|use|try|check|choose|start)\b/i.test(m)) add("info", "Action wording", "The description contains an action word, which can invite a click. This is a simple heuristic.");
+    else if (m) add("info", "Action wording", "No clear action word found. A verb like compare, learn or choose can invite a click. This is a simple heuristic.");
+    var pass = items.filter(function(x){ return x.l === "pass"; }).length, rev = items.filter(function(x){ return x.l === "warn" || x.l === "fail"; }).length;
+    $("seoSum").textContent = pass + " passed, " + rev + " to review" + (missing.length ? ". Missing: " + missing.join(", ") + "." : ".");
+    var ul = $("seoChecks"); ul.textContent = "";
+    var sym = {pass:"✓", warn:"!", fail:"✕", info:"i"}, word = {pass:"Passed", warn:"Review", fail:"Missing or failing", info:"Note"};
+    items.forEach(function(x){
+      var li = document.createElement("li"); li.className = x.l;
+      var ic = document.createElement("span"); ic.className = "ic"; ic.setAttribute("aria-hidden", "true"); ic.textContent = sym[x.l];
+      var bx = document.createElement("div"); var b = document.createElement("b"); b.textContent = x.h;
+      var sr = document.createElement("span"); sr.className = "sr"; sr.textContent = " (" + word[x.l] + ")";
+      var d = document.createElement("span"); d.className = "d"; d.textContent = x.d;
+      b.appendChild(sr); bx.appendChild(b); bx.appendChild(d); li.appendChild(ic); li.appendChild(bx); ul.appendChild(li);
+    });
+  }
+  [T, M, K].forEach(function(el){ el.addEventListener("input", run); }); run();
+})();
+
+/* ---- Lab B: campaign metrics ---- */
+(function(){
+  var PRE = {
+    search:  {impr:48000, clicks:1440, conv:72, spend:21600},
+    display: {impr:220000, clicks:1100, conv:22, spend:9900},
+    social:  {impr:95000, clicks:1900, conv:57, spend:17100}
+  };
+  var cur = null, base = null, key = "search";
+  var FIELDS = [["impr","Impressions",1000,300000,1000],["clicks","Clicks",0,6000,10],["conv","Conversions",0,400,1],["spend","Spend (₹)",0,60000,100]];
+  var nf = new Intl.NumberFormat("en-IN", {maximumFractionDigits: 0}), nf1 = new Intl.NumberFormat("en-IN", {maximumFractionDigits: 1});
+  var wrap = $("cmInputs"), els = {};
+  FIELDS.forEach(function(f){
+    var l = document.createElement("label"); l.setAttribute("for", "n-" + f[0]); l.textContent = f[1]; wrap.appendChild(l);
+    var row = document.createElement("div"); row.className = "field-row";
+    var r = document.createElement("input"); r.type = "range"; r.id = "r-" + f[0]; r.min = f[2]; r.max = f[3]; r.step = f[4]; r.setAttribute("aria-label", f[1] + " slider");
+    var n = document.createElement("input"); n.type = "number"; n.id = "n-" + f[0]; n.min = 0; n.step = f[4];
+    row.appendChild(r); row.appendChild(n); wrap.appendChild(row); els[f[0]] = {r:r, n:n};
+    r.addEventListener("input", function(){ set(f[0], +r.value); });
+    n.addEventListener("input", function(){ if (n.value !== "") set(f[0], +n.value, true); });
+  });
+  var note = document.createElement("p"); note.className = "form-note"; note.textContent = "Change any number. Click-through rate, cost per click, conversion rate and cost per lead update from them."; wrap.appendChild(note);
+  var msg = "";
+  function set(k, v, fromNum){
+    msg = ""; v = Math.max(0, isFinite(v) ? v : 0); cur[k] = v;
+    if (cur.clicks > cur.impr) { cur.clicks = cur.impr; msg = "Clicks cannot exceed impressions, so clicks were capped."; }
+    if (cur.conv > cur.clicks) { cur.conv = cur.clicks; msg = msg || "Conversions cannot exceed clicks, so conversions were capped."; }
+    render(fromNum ? k : null);
+  }
+  function calc(o){ return {ctr: o.impr ? o.clicks / o.impr : null, cpc: o.clicks ? o.spend / o.clicks : null, cvr: o.clicks ? o.conv / o.clicks : null, cpl: o.conv ? o.spend / o.conv : null}; }
+  var pct = function(x){ return x === null ? "n/a" : nf1.format(x * 100) + "%"; };
+  var rup = function(x){ return x === null ? "n/a" : "₹" + nf1.format(x); };
+  function delta(a, b, kind){
+    if (a === null || b === null) return "";
+    var d = a - b; if (Math.abs(d) < 1e-9) return "same as sample";
+    var s = d > 0 ? "▲ " : "▼ ", v = kind === "pct" ? nf1.format(Math.abs(d) * 100) + " pts" : "₹" + nf1.format(Math.abs(d));
+    return s + v + " vs sample";
+  }
+  function render(skip){
+    FIELDS.forEach(function(f){ var e = els[f[0]]; e.r.max = Math.max(f[3], cur[f[0]]); e.r.value = cur[f[0]]; if (skip !== f[0]) e.n.value = cur[f[0]]; });
+    var m = calc(cur), b = calc(base), t = $("cmTiles"); t.textContent = "";
+    var tiles = [["Impressions", nf.format(cur.impr), ""],["Clicks", nf.format(cur.clicks), ""],["CTR", pct(m.ctr), delta(m.ctr, b.ctr, "pct")],["Conversions", nf.format(cur.conv), ""],["Conversion rate", pct(m.cvr), delta(m.cvr, b.cvr, "pct")],["Cost per click", rup(m.cpc), delta(m.cpc, b.cpc, "rs")],["Cost per lead", rup(m.cpl), delta(m.cpl, b.cpl, "rs")]];
+    tiles.forEach(function(x){ var d = document.createElement("div"); d.className = "tile"; var dt = document.createElement("dt"); dt.textContent = x[0]; var dd = document.createElement("dd"); dd.textContent = x[1]; d.appendChild(dt); d.appendChild(dd); if (x[2]) { var s = document.createElement("small"); s.textContent = x[2]; d.appendChild(s); } t.appendChild(d); });
+    var fu = $("cmFunnel"); fu.textContent = "";
+    var top = Math.log10(cur.impr + 1) || 1;
+    [["Impressions", cur.impr],["Clicks", cur.clicks],["Conversions", cur.conv]].forEach(function(x){
+      var r = document.createElement("div"); var a = document.createElement("span"); a.textContent = x[0];
+      var bar = document.createElement("span"); bar.className = "bar"; var i = document.createElement("i"); i.style.width = Math.max(1, Math.log10(x[1] + 1) / top * 100) + "%"; bar.appendChild(i);
+      var v = document.createElement("em"); v.textContent = nf.format(x[1]); r.appendChild(a); r.appendChild(bar); r.appendChild(v); fu.appendChild(r);
+    });
+    var w = $("cmWhat"); w.textContent = "";
+    function p(t2){ var q = document.createElement("p"); q.textContent = t2; w.appendChild(q); }
+    if (m.ctr !== null) p("At this click-through rate, every 1,000 impressions bring about " + nf1.format(m.ctr * 1000) + " clicks.");
+    if (m.cpc !== null && m.cvr !== null && cur.spend > 0) {
+      var c2 = cur.clicks * 1.1, cpc2 = cur.spend / c2, cpl2 = m.cvr > 0 ? cur.spend / (c2 * m.cvr) : null;
+      p("What if clicks rose 10% at the same spend, with the same conversion rate? Cost per click would be about " + rup(cpc2) + (cpl2 !== null ? " and cost per lead about " + rup(cpl2) + "." : "."));
+    }
+    if (m.cpl === null) p("Cost per lead needs at least one conversion.");
+    p("Funnel bars use a log scale so small numbers stay visible.");
+    $("cmWarn").textContent = msg;
+  }
+  function load(k){
+    key = k; cur = JSON.parse(JSON.stringify(PRE[k])); base = JSON.parse(JSON.stringify(PRE[k])); msg = "";
+    qsa("#presets .chip").forEach(function(c){ c.setAttribute("aria-pressed", c.getAttribute("data-p") === k ? "true" : "false"); });
+    render();
+  }
+  qsa("#presets .chip").forEach(function(c){ c.addEventListener("click", function(){ load(c.getAttribute("data-p")); }); });
+  load("search");
+})();
+
+/* ---- Lab C: analytics insight explorer ---- */
+(function(){
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var REG = ["North","South","East","West"], BASE = [180,240,130,210], GR = [.012,.02,.006,.015], SEAS = [.9,.85,1,1.05,1.1,1,.95,1.05,1.15,1.25,1.4,1.3];
+  var DATA = REG.map(function(r, ri){ return MONTHS.map(function(m, i){ return Math.round(BASE[ri] * (1 + GR[ri] * i) * SEAS[i] * (1 + Math.sin((i + 1) * (ri + 1.7)) * 0.06)); }); });
+  var region = "All", period = "0-11";
+  var nf = new Intl.NumberFormat("en-IN", {maximumFractionDigits: 0});
+  var chips = $("anRegions");
+  ["All"].concat(REG).forEach(function(r){
+    var b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.textContent = r; b.setAttribute("aria-pressed", r === region ? "true" : "false");
+    b.addEventListener("click", function(){ region = r; qsa("#anRegions .chip").forEach(function(c){ c.setAttribute("aria-pressed", c === b ? "true" : "false"); }); render(); }); chips.appendChild(b);
+  });
+  $("anPeriod").addEventListener("change", function(e){ period = e.target.value; render(); });
+  function rng(){ var p = period.split("-"); return [+p[0], +p[1]]; }
+  function monthTotals(a, z){
+    var out = [];
+    for (var i = a; i <= z; i++) { var s = 0; REG.forEach(function(r, ri){ if (region === "All" || region === r) s += DATA[ri][i]; }); out.push(s); }
+    return out;
+  }
+  function regionTotals(a, z){ return REG.map(function(r, ri){ var s = 0; for (var i = a; i <= z; i++) s += DATA[ri][i]; return s; }); }
+  function chart(vals, a){
+    var svg = $("anChart"), W = 640, H = 270, L = 44, B = 28, T = 10, R = 8, ph = H - B - T, pw = W - L - R;
+    var mx = Math.max.apply(null, vals), step = mx > 800 ? 200 : mx > 400 ? 100 : mx > 200 ? 50 : 25, top = Math.ceil(mx / step) * step;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H); svg.textContent = "";
+    var NS = "http://www.w3.org/2000/svg";
+    function mk(n, at, txt){ var e = document.createElementNS(NS, n); for (var k in at) e.setAttribute(k, at[k]); if (txt !== undefined) e.textContent = txt; svg.appendChild(e); return e; }
+    var g = document.createElementNS(NS, "g"); g.setAttribute("class", "grid"); svg.appendChild(g);
+    for (var v = 0; v <= top; v += step) {
+      var y = T + ph - v / top * ph;
+      var ln = document.createElementNS(NS, "line"); ln.setAttribute("x1", L); ln.setAttribute("x2", W - R); ln.setAttribute("y1", y); ln.setAttribute("y2", y); g.appendChild(ln);
+      mk("text", {x: L - 8, y: y + 4, "text-anchor": "end"}, String(v));
+    }
+    var bw = pw / vals.length;
+    vals.forEach(function(val, i){
+      var h = val / top * ph, x = L + i * bw + bw * 0.16, w = bw * 0.68;
+      var r = mk("rect", {x: x, y: T + ph - h, width: w, height: h, rx: 3, "class": "bar-rect", tabindex: 0, role: "img", "aria-label": MONTHS[a + i] + ": ₹" + nf.format(val) + " thousand"});
+      function show(){ var tip = $("anTip"), wr = $("anChartWrap").getBoundingClientRect(), rb = r.getBoundingClientRect(); tip.textContent = MONTHS[a + i] + ": ₹" + nf.format(val) + "k"; tip.style.left = (rb.left - wr.left + rb.width / 2) + "px"; tip.style.top = (rb.top - wr.top - 6) + "px"; tip.classList.add("on"); }
+      function hide(){ $("anTip").classList.remove("on"); }
+      r.addEventListener("pointerenter", show); r.addEventListener("pointerleave", hide); r.addEventListener("focus", show); r.addEventListener("blur", hide);
+      mk("text", {x: x + w / 2, y: H - 8, "text-anchor": "middle"}, MONTHS[a + i]);
+    });
+    svg.setAttribute("aria-label", "Monthly revenue bar chart for " + (region === "All" ? "all regions" : region + " region") + ", rupees thousand");
+  }
+  function render(){
+    var p = rng(), a = p[0], z = p[1], vals = monthTotals(a, z); chart(vals, a);
+    var rt = regionTotals(a, z), tot = rt.reduce(function(x, y){ return x + y; }, 0), shown = vals.reduce(function(x, y){ return x + y; }, 0);
+    var rb = $("anRegionBars"); rb.textContent = ""; var rmax = Math.max.apply(null, rt), topI = rt.indexOf(rmax);
+    REG.forEach(function(r, i){
+      var d = document.createElement("div"); if (i === topI) d.className = "top";
+      var n = document.createElement("span"); n.textContent = r; var bar = document.createElement("span"); bar.className = "bar"; var f = document.createElement("i"); f.style.width = (rt[i] / rmax * 100) + "%"; bar.appendChild(f);
+      var v = document.createElement("em"); v.textContent = "₹" + nf.format(rt[i]) + "k"; d.appendChild(n); d.appendChild(bar); d.appendChild(v); rb.appendChild(d);
+    });
+    var label = $("anPeriod").options[$("anPeriod").selectedIndex].text, who = region === "All" ? "all regions" : region;
+    var bestI = vals.indexOf(Math.max.apply(null, vals)), worstI = vals.indexOf(Math.min.apply(null, vals));
+    var first = vals[0], last = vals[vals.length - 1], ch = first ? (last - first) / first * 100 : 0;
+    var ul = $("anInsights"); ul.textContent = "";
+    function li(t){ var e = document.createElement("li"); e.textContent = t; ul.appendChild(e); }
+    li("Revenue for " + who + ", " + label + ", totals ₹" + nf.format(shown) + " thousand.");
+    li("The strongest month is " + MONTHS[a + bestI] + " at ₹" + nf.format(vals[bestI]) + "k. The weakest is " + MONTHS[a + worstI] + " at ₹" + nf.format(vals[worstI]) + "k.");
+    if (vals.length > 1) li("From " + MONTHS[a] + " to " + MONTHS[z] + ", monthly revenue " + (ch >= 0 ? "rose " : "fell ") + nf.format(Math.abs(ch)) + "%.");
+    if (region === "All") li(REG[topI] + " leads this period with " + nf.format(rmax / tot * 100) + "% of revenue. " + REG[rt.indexOf(Math.min.apply(null, rt))] + " is the smallest.");
+    else { var rank = rt.slice().sort(function(x, y){ return y - x; }).indexOf(rt[REG.indexOf(region)]) + 1; li(region + " ranks " + rank + " of 4 regions this period, with " + nf.format(rt[REG.indexOf(region)] / tot * 100) + "% of total revenue."); }
+  }
+  render();
+})();
+
+})();
+</script>
